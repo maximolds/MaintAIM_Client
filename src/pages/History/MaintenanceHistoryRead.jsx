@@ -17,7 +17,7 @@ const MaintenanceHistoryRead = () => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/maintenancehistory/byId/${id}`).then((response) => {
+        axios.get(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/maintenancehistory/byId/${id}`).then((response) => {
             setListOfMaintenanceHistory(response.data)
             console.log(response.data)
         });
@@ -32,7 +32,7 @@ const MaintenanceHistoryRead = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         axios.put(
-            `http://localhost:3001/maintenancehistory/update/byId/${id}`, listOfMaintenanceHistory).then(res => {
+            `https://maintaim-db-5eb6eb864ba7.herokuapp.com/maintenancehistory/update/byId/${id}`, listOfMaintenanceHistory).then(res => {
                 console.log(res);
                 navigate('/maintenance-history')
             }).catch(err => console.log(err));

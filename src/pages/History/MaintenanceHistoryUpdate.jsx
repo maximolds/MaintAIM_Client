@@ -25,7 +25,7 @@ const MaintenanceHistoryUpdate = () => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/maintenancehistory/byId/${id}`).then((response) => {
+        axios.get(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/maintenancehistory/byId/${id}`).then((response) => {
             setListOfMaintenanceHistory(response.data)
             setInitialValues(response.data)
             console.log(response.data)
@@ -35,7 +35,7 @@ const MaintenanceHistoryUpdate = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         axios.put(
-            `http://localhost:3001/maintenancehistory/update/byId/${id}`, initialValues).then(res => {
+            `https://maintaim-db-5eb6eb864ba7.herokuapp.com/maintenancehistory/update/byId/${id}`, initialValues).then(res => {
                 console.log(res);
                 navigate('/maintenance-history')
             }).catch(err => console.log(err));

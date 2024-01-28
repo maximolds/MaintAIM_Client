@@ -13,7 +13,7 @@ const Settings = () => {
   const { activeMenu, setActiveMenu } = useStateContext();
 
   useEffect(() => {
-    axios.get("http://localhost:3001/auth").then((response) => {
+    axios.get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth").then((response) => {
       setListOfUsers(response.data);
     });
   }, []);
@@ -28,7 +28,7 @@ const Settings = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/auth/auth", {
+      .get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth/auth", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },
