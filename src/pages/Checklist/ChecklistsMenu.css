@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Set a minimum height for the body and a white background */
+
+
+
+
+.section {
+    transform: scale(0.8); /* Adjust the scale factor as needed */
+    display: inline-block;
+    text-align: center;
+    margin: 0.5px; /* Add spacing between sections */
+    padding: 1px; /* Increase padding for better separation */
+    background-color: #fff; /* Set the background color for sections */
+    box-shadow: 10px 5px 5px rgba(53, 53, 53, 0.1); /* Add a subtle box shadow */
+    border: 2px solid #c4c3c3d0; 
+    border-radius: 5px; /* Add rounded corners to sections */
+    width: 200px;
+    height: 350px; /* Set a fixed height for the sections */
+
+   
+}
+
+h3 {
+    margin-top: 50px;
+    border: 0px solid #f5f5f5; /* Add a border around h3 elements */
+    padding: 30px 30px 0; /* Add padding inside the border, and no bottom padding */
+}
+
+h5 {
+    margin: 10px 0; /* Add spacing below h5 elements */
+    font-style: italic; /* Italicize the h5 elements */
+}
+
+button {
+    background: #86acbb; /* Set the background color for buttons */
+    color: #fff; /* Set text color for buttons */
+    border: none;
+    padding: 10px 20px; /* Increase padding for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 30px; /* Add rounded corners to buttons */
+    margin-top: 120px; /* Add spacing above the buttons */
+}
+
+button:hover {
+    background: #86acbb; /* Change button background color on hover */
+}

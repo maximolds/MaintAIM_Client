@@ -1,0 +1,32 @@
+.customShadow {
+    --tw-shadow: 0 20px 13px rgba(134, 172, 187, 0.482), 0 8px 5px rgba(134, 172, 187, 0.591);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #3065e100), var(--tw-ring-shadow, 0 0 #3065e100), var(--tw-shadow);
+  transition: box-shadow 0.3s ease;
+  }
+
+  .customShadow:hover {
+    --tw-shadow: 0 20px 13px rgba(134, 172, 187, 0.792), 0 8px 5px rgba(134, 172, 187, 1);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #33e13000), var(--tw-ring-shadow, 0 0 #33e13000), var(--tw-shadow);
+  }
+
+  .customCalendar{
+    width: 100%;
+    height: 300px;
+    font-size: 1px;
+    color: rgba(134, 172, 187, 0.792);
+  }
+
+  .schedule-header {
+    display: none;
+  }
+
+  .buttonShadow {
+    --tw-shadow: 0 10px 3px rgba(134, 172, 187, 0.482), 0 5px 2px rgba(134, 172, 187, 0.591);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #3065e100), var(--tw-ring-shadow, 0 0 #3065e100), var(--tw-shadow);
+  transition: box-shadow 0.3s ease;
+  }
+
+  .buttonShadow:hover {
+    --tw-shadow: 0 10px 3px rgba(134, 172, 187, 0.792), 0 5px 2px rgba(134, 172, 187, 1);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #33e13000), var(--tw-ring-shadow, 0 0 #33e13000), var(--tw-shadow);
+  }
