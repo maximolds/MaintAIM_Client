@@ -400,7 +400,7 @@ function MonthlyPMUL() {
     };
 
     const onSubmit = (data) => {
-        axios.post("http://localhost:3001/ulchecklist", data,
+        axios.post("https://maintaim-db-5eb6eb864ba7.herokuapp.com/ulchecklist", data,
             {
                 headers: {
                     accessToken: localStorage.getItem("accessToken"),

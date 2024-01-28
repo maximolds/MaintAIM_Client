@@ -13,7 +13,7 @@ function MonthlyPMUHRead() {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/uhchecklist/byId/${id}`).then((response) => {
+        axios.get(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/uhchecklist/byId/${id}`).then((response) => {
             setListOfUHCheckList(response.data)
 
             console.log(response.data)

@@ -8,7 +8,7 @@ const ProtectedRoutes = () => {
  useEffect(() => {
     const validateAccessToken = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/login", {
+        const response = await axios.get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/login", {
           headers: {
             accessToken: localStorage.getItem("accessToken"),
           },

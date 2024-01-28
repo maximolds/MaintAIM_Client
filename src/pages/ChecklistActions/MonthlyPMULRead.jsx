@@ -14,7 +14,7 @@ function MonthlyPMULRead() {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/ulchecklist/byId/${id}`).then((response) => {
+        axios.get(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/ulchecklist/byId/${id}`).then((response) => {
             setListOfCraneULCheckList(response.data)
             console.log(response.data)
         });

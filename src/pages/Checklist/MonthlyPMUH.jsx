@@ -330,7 +330,7 @@ function MonthlyPMUH() {
   };
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:3001/uhchecklist", data,
+    axios.post("https://maintaim-db-5eb6eb864ba7.herokuapp.com/uhchecklist", data,
       {
         headers: {
           accessToken: localStorage.getItem("accessToken"),

@@ -29,7 +29,7 @@ function LogoutConfirm({ visble, onClose }) {
     
       useEffect(() => {
         axios
-          .get("http://localhost:3001/auth/auth", {
+          .get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth/auth", {
             headers: {
               accessToken: localStorage.getItem("accessToken"),
             },

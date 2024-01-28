@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { UserIcon } from '../assets/icons/UserIcon';
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
     const [username, setUsername] = useState("");
@@ -77,6 +77,14 @@ function Login() {
       mb-40 hover:bg-white hover:text-black transistion-colors duration-300"
                         onClick={login}
                     >Login</button>
+
+                    <Link
+
+                        className="my-4 relative w-80 h-30  bg-main-blue 
+text-sm ml-200 rounded-lg font-inter shadow-lg 
+mb-40 hover:bg-white hover:text-black transistion-colors duration-300"
+                        to={'/registration'}
+                    >Register</Link>
 
                     {/* Forgot Password */}
 

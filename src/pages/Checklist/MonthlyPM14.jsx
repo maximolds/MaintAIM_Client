@@ -701,7 +701,7 @@ function MonthlyPM14() {
   }
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:3001/crane14checklist", data,
+    axios.post("https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane14checklist", data,
       {
         headers: {
           accessToken: localStorage.getItem("accessToken"),

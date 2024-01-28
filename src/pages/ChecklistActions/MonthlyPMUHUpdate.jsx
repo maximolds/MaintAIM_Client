@@ -330,7 +330,7 @@ function MonthlyPMUHUpdate() {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/uhchecklist/byId/${id}`).then((response) => {
+        axios.get(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/uhchecklist/byId/${id}`).then((response) => {
             setListOfUHCheckList(response.data)
             setInitialValues(response.data)
             console.log(response.data)
@@ -340,7 +340,7 @@ function MonthlyPMUHUpdate() {
     const onSubmit = (e) => {
         e.preventDefault();
         axios.put(
-            `http://localhost:3001/uhchecklist/update/byId/${id}`, initialValues).then(res => {
+            `https://maintaim-db-5eb6eb864ba7.herokuapp.com/uhchecklist/update/byId/${id}`, initialValues).then(res => {
                 console.log(res);
                 navigate('/checklists')
             }).catch(err => console.log(err));

@@ -695,7 +695,7 @@ function MonthlyPM13() {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/crane13checklist/byId/${id}`).then((response) => {
+        axios.get(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane13checklist/byId/${id}`).then((response) => {
             setListOfCrane13CheckList(response.data)
             setInitialValues(response.data)
             console.log(response.data)
