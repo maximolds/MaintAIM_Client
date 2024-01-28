@@ -5,8 +5,9 @@ import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, Fi
 import { GrSchedule } from "react-icons/gr";
 import { FaHistory } from "react-icons/fa";
 import { IoDocumentAttach, IoChatbubbleSharp  } from "react-icons/io5";
-import { AiOutlineAudit } from "react-icons/ai";
+import { AiOutlineAudit, AiFillSchedule } from "react-icons/ai";
 import { IoMdSettings } from "react-icons/io";
+
 
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
@@ -493,7 +494,7 @@ export const links = [
       
       {
         name: 'maintenance-schedule',
-        icon: <GrSchedule />,
+        icon: <AiFillSchedule />,
       },
       {
         name: 'maintenance-history',

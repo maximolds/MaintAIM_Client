@@ -30,7 +30,7 @@ function MonthlyPMULRead() {
     return (
 
         <div>
-            <div className='flex justify-end mt-2 mr-4'>
+            <div className='flex justify-end mt-20 mr-4 md:mt-10'>
                 <Link
                     to={`/daily/update/${id}`}
                     //onClick={()=>navigate(-1)}

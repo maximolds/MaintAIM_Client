@@ -27,8 +27,8 @@ function UserProfile({ visble, onClose }) {
  return (
     <div id='container' onClick={handleOnClose}
       className="fixed inset-0 z-10000 
-    pt-[125px] pl-[1100px]">
-      <div className="bg-white border-black shadow-sm rounded-b-lg w-[138px] 
+    pt-[70px] pl-[300px] md:pl-[1050px] md:pt-[520px]">
+      <div className="w-[138px] 
       h-[50px] transition-all duration-500 ease-in-out max-h-full">
         <div className='flex justify-center'>
           <button onClick={handleLogoutClick} className=' w-[80%] mt-2 bg-[#86acbb] text-white 
