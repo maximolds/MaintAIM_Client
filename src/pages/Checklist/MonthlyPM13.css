@@ -11,11 +11,7 @@
 
 
 /* Set a minimum height for the body and a white background */
-body {
-    min-height: 100vh;
-    background: #a7a4a4;
-    margin-left: 0px; /* Adjust the left margin to 10px */
-}
+
 
 /* Style the header section */
 .header {
@@ -37,6 +33,7 @@ form {
     text-align: left;
     margin: 20px 0; /* Add margin for spacing */
     margin-left: 50px;
+    width: 100%;
 }
 
 /* Style the table headers */

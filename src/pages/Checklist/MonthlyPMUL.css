@@ -10,11 +10,7 @@
 
 
 /* Set a minimum height for the body and a white background */
-body {
-    min-height: 100vh;
-    background: #a7a4a4;
-    margin-left: 0px; /* Adjust the left margin to 10px */
-}
+
 
 /* Style the header section */
 .header {

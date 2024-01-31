@@ -7,20 +7,9 @@
 }
 
 /* Apply a zoom out effect */
-body {
-    min-height: 100vh;
-    background: #a7a4a4;
-    margin-left: 0px; /* Adjust the left margin to 10px */
-    width:100% ;
-    block-size:100%;
-}
 
 /* Set a minimum height for the body and a white background */
-body {
-    min-height: 100vh;
-    background: #a7a4a4;
-    margin-left: 0px; /* Adjust the left margin to 10px */
-}
+
 
 /* Style the header section */
 .header {
@@ -31,7 +20,8 @@ body {
     padding: 10px;
     color: #000000;
     text-align: center;
-    margin-left: 0px; /* Adjust the left margin for the header if needed */
+    margin-left: 0px;
+    width: 100%; /* Adjust the left margin for the header if needed */
 }
 
 /* Style the h1 and h2 */
@@ -50,7 +40,8 @@ h2 {
 form {
     text-align: left;
     margin: 10px 0;
-    margin-left: 50px; /* Add a left margin of 20px to the form */
+    margin-left: 50px;
+    width: 100%; /* Add a left margin of 20px to the form */
 }
 /* Style the table headers */
 table th {
