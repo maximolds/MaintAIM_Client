@@ -13,5 +13,5 @@ export { default as ChartsHeader } from './ChartsHeader';
 export { default as Header } from './Header';
 export { default as SparkLine } from './Charts/SparkLine';
 export { default as Stacked } from './Charts/Stacked';
-export {default as ShowComponents} from './ShowComponents';
-export {default as LogoutConfirm} from './LogoutConfirm';
+export { default as ShowComponents } from './ShowComponents';
+export { default as LogoutConfirm } from './LogoutConfirm';

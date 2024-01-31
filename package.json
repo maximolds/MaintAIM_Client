@@ -23,6 +23,7 @@
     "@syncfusion/ej2-react-schedule": "^23.1.40",
     "axios": "^1.6.1",
     "formik": "^2.4.5",
+    "html5-qrcode": "^2.3.8",
     "react": "^18.2.0",
     "react-data-table-component": "^7.6.2",
     "react-dom": "^18.2.0",

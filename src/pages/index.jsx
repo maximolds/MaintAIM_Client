@@ -32,3 +32,4 @@ export { default as MonthlyPMULRead } from './ChecklistActions/MonthlyPMULRead'
 export { default as MonthlyPMUHRead } from './ChecklistActions/MonthlyPMUHRead'
 export { default as MaintenanceHistoryUpdate } from './History/MaintenanceHistoryUpdate'
 export { default as MaintenanceHistoryRead } from './History/MaintenanceHistoryRead'
+export { default as QRScanner } from '../pages/QRScanner';
