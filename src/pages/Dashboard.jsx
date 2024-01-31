@@ -29,7 +29,7 @@ const Dashboard = () => {
   return (
     <div className='flex'>
       <div className=''>
-        <div className='mt-5'>
+        <div className='mt-20 md:mt-5'>
           <div className='flex flex-wrap lg:flex-nowrap 
       justify-center '>
             <div className="bg-white dark:text-gray-200
