@@ -5,6 +5,9 @@ import * as Yup from "yup";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { UserIcon } from '../assets/icons/UserIcon';
+import { FaLock } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { AiFillPicture } from "react-icons/ai";
 
 
 function Registration() {
@@ -62,8 +65,8 @@ function Registration() {
     };
 
     return (
-        <div className="mt-20 flex items-center justify-center w-full h-screen bg-[url('../src/assets/images/MaintAIM-bg.jpg')] relative bg-cover bg-no-repeat">
-            <div className="max-w-md w-auto mx-auto h-auto max-h-md  p-6 bg-white rounded-lg shadow-xl">
+        <div className="mt-10 flex items-center justify-center w-full h-full  relative bg-cover bg-no-repeat">
+            <div className="max-w-md w-auto mx-auto h-auto max-h-md m-10 p-6 bg-white rounded-lg shadow-xl">
                 <h1 className="text-2xl text-black text-whitefront-bold mb-10px font-inter font-bold">Register</h1>
                 <h2 className="text-xs text-main-blue font-inter font-bold mb-40">Asia Integrated Machine Inc.</h2>
 
@@ -73,9 +76,9 @@ function Registration() {
                         <input
                             type="text"
                             name="username"
-                            className="block w-72 h-40 pl-10 font-inter text-base mb-16px text-white bg-main-blue
-                        border-2 border-b-2 border-black appearnace-none dark:focus:border-blue-500 focus:outline-none 
-                        focus:ring-0 focus:text-white focus:border-blue-600 peer placeholder-white"
+                            className="block w-72 h-40 pl-[10px] font-inter text-base mb-16px text-white bg-main-blue
+                            border-2 border-b-2 border-black appearnace-none dark:focus:border-blue-500 focus:outline-none 
+                            focus:ring-0 focus:text-white focus:border-blue-600 peer placeholder-white"
                             onChange={handleInputChange}
                             placeholder="Username"
                         />
@@ -95,7 +98,7 @@ function Registration() {
                             placeholder="Password"
                         />
                         <div className='absolute top-2 left-2 z-10 flex items-center pointer-events-none'>
-                            <UserIcon />
+                            <FaLock />
                         </div>
                     </div>
 
@@ -110,7 +113,7 @@ function Registration() {
                             placeholder="Email"
                         />
                         <div className='absolute top-2 left-2 z-10 flex items-center pointer-events-none'>
-                            <UserIcon />
+                            <MdEmail />
                         </div>
                     </div>
 
@@ -169,7 +172,7 @@ function Registration() {
                             onChange={handleInputChange}
                         />
                         <div className='absolute top-2 left-2 z-10 flex items-center pointer-events-none'>
-                            <UserIcon />
+                            <AiFillPicture />
                         </div>
                     </div>
 

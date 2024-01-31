@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { UserIcon } from '../assets/icons/UserIcon';
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-
+import { FaLock } from "react-icons/fa";
 function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -64,7 +64,7 @@ function Login() {
                             }}
                         />
                         <div className='absolute top-2 left-2 z-10 flex items-center pointer-events-none'>
-                            <UserIcon />
+                            <FaLock />
                         </div>
                     </div>
 
