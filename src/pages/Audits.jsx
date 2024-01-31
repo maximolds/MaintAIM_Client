@@ -54,57 +54,61 @@ const Audits = () => {
       />
       <div className='m-2 md:m-10 mt-2 p-2 md:p-10 bg-white
   rounded-3xl flex-1 md:flex shadow-xl justify-between flex-col flex-wrap'>
-        <div className={`flex flex-wrap  border-black  
-          ${activeMenu ? 'justify-center' : ' justify-center md:w[40%] items-center'}`}>
-          {/* Erase eventsettings and
+
+        {/* Erase eventsettings and
         selectedDate when syncing with a database */}
-          <div className='flex flex-col'>
-
-            {(authState.role === "Admin" || authState.role === "Staff") && (
-              <Link className='w-[100px] h-10 justify-center items-center rounded-xl pt-2 text-center bg-[#86ACBB] text-white hover:bg-red-500 focus:bg-red-500'
-                to="/qrscan">QR Scan</Link>
-            )}
-
-            {(authState.role === "Admin" || authState.role === "Manager") && (
-              <div>
-                <div className='mt-5'>
-                  <iframe
-                    title="Crane 1"
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRVyxbt16Kb9jL8zaD8mu433XUmc05c_akohY_KSUheSih4tGNe4EfES2oqIsrnm0ZZ1poNjBYay0Yb/pubhtml?widget=true&amp;headers=false"
-                    width="500px"
-                    height="500px"
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe>
-                </div>
+        <div className='flex items-end justify-end'>
+          {(authState.role === "Admin" || authState.role === "Staff") && (
+            <Link className='w-[100px] h-10 justify-center items-center rounded-xl pt-2 text-center bg-[#86ACBB] text-white hover:bg-red-500 focus:bg-red-500'
+              to="/qrscan">QR Scan</Link>
+          )}
+        </div>
 
 
-                <div className='mt-5'>
-                  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYTVsHK-lSOqkBDzmdO0HCrBAcw-V_hRKl3Q4gUVOyhOwx-6AR0P045Zaj-2BVN_aq7k1x081v_ng0/pubhtml?widget=true&amp;headers=false"
-                    width="500px"
-                    height="500px"
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe>
-                </div>
+        <div className='flex flex-col'>
 
-                <div className='mt-5'>
-                  <iframe
-                    title="Crane 3"
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVjuH_vxMmiGOpt7rv12NH0VHGDv2d2oXjxnfZuG9Yt6OyqsmbrjbAlVu78Z3GSSnlFtBSVBydGt73/pubhtml?widget=true&amp;headers=false"
-                    width="500px"
-                    height="500px"
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe>
-                </div>
+
+
+          {(authState.role === "Admin" || authState.role === "Manager") && (
+            <div>
+              <div className='mt-5'>
+                <iframe
+                  title="Crane 1"
+                  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRVyxbt16Kb9jL8zaD8mu433XUmc05c_akohY_KSUheSih4tGNe4EfES2oqIsrnm0ZZ1poNjBYay0Yb/pubhtml?widget=true&amp;headers=false"
+                  width="100%"
+                  height="500px"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
               </div>
-            )}
 
-          </div>
 
+              <div className='mt-5'>
+                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYTVsHK-lSOqkBDzmdO0HCrBAcw-V_hRKl3Q4gUVOyhOwx-6AR0P045Zaj-2BVN_aq7k1x081v_ng0/pubhtml?widget=true&amp;headers=false"
+                  width="100%"
+                  height="500px"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              <div className='mt-5'>
+                <iframe
+                  title="Crane 3"
+                  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVjuH_vxMmiGOpt7rv12NH0VHGDv2d2oXjxnfZuG9Yt6OyqsmbrjbAlVu78Z3GSSnlFtBSVBydGt73/pubhtml?widget=true&amp;headers=false"
+                  width="100%"
+                  height="500px"
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          )}
 
         </div>
+
+
+
       </div>
     </div>
   )

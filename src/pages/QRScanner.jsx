@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Html5QrcodeScanner } from 'html5-qrcode'
+import { Header } from '../components';
+import { useStateContext } from '../contexts/ContextProvider';
 
 function QRScanner() {
 
   const [scanResult, setScanResult] = useState(null);
+  const { currentColor, activeMenu, setActiveMenu } = useStateContext();
 
   useEffect(() => {
     const scanner = new Html5QrcodeScanner('reader', {
@@ -24,20 +27,39 @@ function QRScanner() {
     function error(err) {
       console.warn(err);
     }
-  },[]);
+  }, []);
 
 
 
   return (
-    <div>
-      <h1>
-        Scan a QR Code to see the result!
-      </h1>
-      {scanResult 
-      ? <div>Success: <a href={scanResult}>{scanResult}</a> </div>
-      : <div id='reader'></div> 
-      }
-      
+
+
+    <div className='m-2 md:m-10 mt-24 p-2 md:p-10 text-slate-950 dark:text-white'>
+
+      <Header
+        style={{
+          color: 'black'
+        }}
+        darkStyle={{
+          color: 'white'
+        }}
+        category='App'
+        title="Scan a QR Code!"
+      />
+
+      <div className='m-2 md:m-10 mt-2 p-2 md:p-10 bg-white
+  rounded-3xl flex-1 md:flex shadow-xl justify-between flex-col flex-wrap'>
+        <div className={`flex flex-wrap  border-black  
+          ${activeMenu ? 'justify-center' : ' justify-center md:w[40%] items-center'}`}>
+          <div className='mt-10'>
+            {scanResult
+              ? <div>QR Link: <span className='text-blue-400'><a href={scanResult}>{scanResult}</a> </span></div>
+              : <div id='reader'></div>
+            }
+
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
