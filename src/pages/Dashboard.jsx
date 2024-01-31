@@ -48,7 +48,7 @@ const Dashboard = () => {
                   </p>
                 </div>
               </div>
-              <div className='mt-6 text-center'>
+              <div className='mt-6 text-center '>
                 <NavLink
                   to={`/user-guide`}
                   style={{ backgroundColor: currentColor }}
@@ -67,8 +67,8 @@ const Dashboard = () => {
 
           {/* Cards*/}
 
-          <div className='flex-1 md:flex'>
-            <div className={`flex flex-wrap  border-black  
+          <div className='flex-1 md:flex mt-10 md:mt-5'>
+            <div className={`flex flex-wrap  border-black 
             ${activeMenu ? 'justify-center md:w-[60%]' : ' justify-center md:w[40%] items-center'}`}>
 
               {cardsData.map((link) => (
