@@ -28,7 +28,7 @@ const Documentation = () => {
         selectedDate when syncing with a database */}
         <iframe 
         width="100%" 
-        height="1000" 
+        height="500" 
         title="2024 Maintenance Report"
         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQnI6D84AprTbFoCjmOvWCupS0qD2xIRYTQgVroIFGAiidGLZOCQLHgS-sfVm2xkD3WRf_V7-q8vbLX/pubhtml?widget=true&amp;headers=false">
         </iframe>

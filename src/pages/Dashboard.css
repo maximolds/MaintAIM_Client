@@ -9,6 +9,17 @@
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #33e13000), var(--tw-ring-shadow, 0 0 #33e13000), var(--tw-shadow);
   }
 
+  .customShadow2 {
+    --tw-shadow: 0 20px 13px rgba(25, 63, 78, 0.482), 0 8px 5px rgba(25, 63, 78, 0.591);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #3065e100), var(--tw-ring-shadow, 0 0 #3065e100), var(--tw-shadow);
+  transition: box-shadow 0.3s ease;
+  }
+
+  .customShadow2:hover {
+    --tw-shadow: 0 20px 13px rgba(25, 63, 78, 0.792), 0 8px 5px rgba(25, 63, 78, 1);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #33e13000), var(--tw-ring-shadow, 0 0 #33e13000), var(--tw-shadow);
+  }
+
   .customCalendar{
     width: 100%;
     height: 300px;
