@@ -136,7 +136,7 @@ const [authState, setAuthState] = useState({
                   <Route path='/maintenance-schedule' element={<MaintenanceSchedule />} />
                   <Route path="/maintenance-history" element={<MaintenanceHistory />} />
                   <Route path="/checklists" element={<Checklists />} />
-                  <Route path="/documenation" element={<Documentation />} />
+                  <Route path="/documentation" element={<Documentation />} />
                   <Route path="/audits" element={<Audits />} />
                   <Route path="/settings" element={<Settings />} />
                   <Route path="/profile/:id" element={<Profile />} />
