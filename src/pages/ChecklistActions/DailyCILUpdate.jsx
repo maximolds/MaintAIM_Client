@@ -134,7 +134,7 @@ function DailyCILUpdate() {
 
 
     return (
-        <div>
+        <div className='w-full h-full'>
 
 
             <form id="checklistForm" onSubmit={onSubmit}>

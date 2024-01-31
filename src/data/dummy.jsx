@@ -505,7 +505,7 @@ export const links = [
         icon: <MdChecklist />,
       },
       {
-        name: 'documenation',
+        name: 'documentation',
         icon: <IoDocumentAttach />,
       },
       {
