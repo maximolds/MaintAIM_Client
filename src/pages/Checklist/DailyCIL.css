@@ -11,6 +11,8 @@ body {
     min-height: 100vh;
     background: #a7a4a4;
     margin-left: 0px; /* Adjust the left margin to 10px */
+    width:100% ;
+    block-size:100%;
 }
 
 /* Set a minimum height for the body and a white background */
