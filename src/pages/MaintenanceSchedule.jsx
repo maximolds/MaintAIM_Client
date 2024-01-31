@@ -93,7 +93,7 @@ const MaintenanceSchedule = () => {
           <iframe
             src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%2386acbb&ctz=Asia%2FManila&showTabs=1&showTitle=1&title=Asia%20Integrated%20Schedule&mode=WEEK&hl=en_GB&src=YXNpYS5pbnRlZ3JhdGVkLm1hY2hpbmUxM0BnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ucGhpbGlwcGluZXMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043"
             style={{ border: 'solid 1px #777' }}
-            width="799"
+            width="100%"
             height="500"
             frameBorder="0"
             scrolling="no"
@@ -107,7 +107,7 @@ const MaintenanceSchedule = () => {
           <iframe
             src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FManila&showTitle=0&showNav=1&showDate=1&showTabs=0&showCalendars=1&mode=AGENDA&src=YXNpYS5pbnRlZ3JhdGVkLm1hY2hpbmUxM0BnbWFpbC5jb20&src=ZW4ucGhpbGlwcGluZXMjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043"
             style={{ border: 'solid 1px #777' }}
-            width="800"
+            width="100%"
             height="300"
             frameBorder="0"
             scrolling="no"
