@@ -40,9 +40,7 @@ h5 {
 }
 
 button {
-    background: #86acbb; /* Set the background color for buttons */
-    color: #fff; /* Set text color for buttons */
-    border: none;
+    background: #9a86bb; /* Set the background color for buttons */
     padding: 10px 20px; /* Increase padding for buttons */
     cursor: pointer;
     transition: background-color 0.3s;
