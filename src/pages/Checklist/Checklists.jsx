@@ -497,7 +497,7 @@ const Checklists = () => {
         <DataTable
           columns={dailycolumns}
           data={filteredPersonnel}
-          selectableRows
+     
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination
@@ -523,7 +523,7 @@ const Checklists = () => {
         <DataTable
           columns={uhcolumns}
           data={uhfilteredPersonnel}
-          selectableRows
+       
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination
@@ -549,7 +549,7 @@ const Checklists = () => {
         <DataTable
           columns={ulcolumns}
           data={ulfilteredPersonnel}
-          selectableRows
+        
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination
@@ -601,7 +601,7 @@ const Checklists = () => {
         <DataTable
           columns={crane14columns}
           data={crane14filteredPersonnel}
-          selectableRows
+    
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination

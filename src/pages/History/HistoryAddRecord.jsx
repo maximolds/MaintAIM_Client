@@ -48,7 +48,7 @@ const HistoryAddRecord = () => {
             });
     };
 
-    
+
 
 
 
@@ -95,15 +95,15 @@ const HistoryAddRecord = () => {
                             Crane Information
                         </h2>
 
-                        <div className='flex-1 md:flex'>
-                            <div className='border-t-2 w-full flex flex-wrap'>
-                                <div className={`flex flex-wrap  
-            ${activeMenu ? 'justify-start md:w-[50%]' : ' justify-start md:w[50%] items-center'}`} >
+                        <div className='flex flex-wrap'>
+                            <div className='border-t-2 w-full '>
+                                <div className={`flex flex-col 
+            ${activeMenu ? 'justify-start md:w-[50%]' : ' justify-start md:w[50%] items-start'}`} >
                                     <div className='mt-5 '>
                                         <p className='text-sm text-black dark:text-white mb-3 font-bold'>
                                             Personnel In-charge
                                         </p>
-                                        <ErrorMessage name="personnel_incharge" component="span" />
+                                        <ErrorMessage className='text-red-500' name="personnel_incharge" component="span" />
                                         <Field
                                             name="personnel_incharge"
                                             type="text"
@@ -111,69 +111,67 @@ const HistoryAddRecord = () => {
                                             className='rounded-3xl w-318 h-42 border-2 border-fade-blue  pl-4'
                                         />
                                     </div>
-                                    <div className='mb-0 mt-5 md:mt-0 md:mb-10'>
+                                    <div className='mt-5'>
                                         <p className='text-sm text-black dark:text-white mb-3 font-bold'>
                                             Crane Number
                                         </p>
-                                        <ErrorMessage name="crane_number" component="span" />
+                                        <ErrorMessage className='text-red-500' name="crane_number" component="span" />
                                         <Field
                                             name="crane_number"
                                             type="number"
                                             placeholder='Crane 1'
-                                            className='rounded-3xl w-318 h-42 border-2 border-fade-blue pl-4'
+                                            className='rounded-3xl w-full h-42 border-2 border-fade-blue pl-4'
                                         />
                                     </div>
-                                </div>
-                                <div className={`flex flex-wrap   
-            ${activeMenu ? 'justify-start md:w-[50%]' : ' justify-start md:w[50%] items-center'}`}>
                                     <div className='mt-5'>
                                         <p className='text-sm text-black dark:text-white mb-3 font-bold'>
                                             Part Replaced
                                         </p>
-                                        <ErrorMessage name="part_replaced" component="span" />
+                                        <ErrorMessage className='text-red-500' name="part_replaced" component="span" />
                                         <Field
                                             name="part_replaced"
                                             type="text"
                                             placeholder=''
-                                            className='rounded-3xl w-318 h-42 border-2 border-fade-blue  pl-4'
+                                            className='rounded-3xl w-full h-42 border-2 border-fade-blue  pl-4'
                                         />
                                     </div>
                                     <div className='mt-5'>
                                         <p className='text-sm text-black dark:text-white mb-3 font-bold'>
                                             Date Replaced
                                         </p>
-                                        <ErrorMessage name="date_replaced" component="span" />
+                                        <ErrorMessage className='text-red-500' name="date_replaced" component="span" />
                                         <Field
                                             name="date_replaced"
                                             type="date"
                                             placeholder='Insert Date Here'
-                                            className='rounded-3xl w-318 h-42 border-2 border-fade-blue  pl-4'
+                                            className='rounded-3xl w-full h-42 border-2 border-fade-blue  pl-4'
                                         />
                                     </div>
                                     <div className='mt-5'>
                                         <p className='text-sm text-black dark:text-white mb-3 font-bold'>
                                             Previous Date Replaced
                                         </p>
-                                        <ErrorMessage name="previous_date_replaced" component="span" />
+                                        <ErrorMessage className='text-red-500' name="previous_date_replaced" component="span" />
                                         <Field
                                             name="previous_date_replaced"
                                             type="date"
                                             placeholder='Insert Date Here'
-                                            className='rounded-3xl w-318 h-42 border-2 border-fade-blue  pl-4'
+                                            className='rounded-3xl w-full h-42 border-2 border-fade-blue  pl-4'
                                         />
                                     </div>
                                     <div className='mt-5'>
                                         <p className='text-sm text-black dark:text-white mb-3 font-bold'>
-                                           Status
+                                            Status
                                         </p>
-                                        <ErrorMessage name="status" component="span" />
+                                        <ErrorMessage className='text-red-500' name="status" component="span" />
                                         <Field
                                             name="status"
                                             type="string"
                                             placeholder='Insert Current Status'
-                                            className='rounded-3xl w-318 h-42 border-2 border-fade-blue  pl-4'
+                                            className='rounded-3xl w-full h-42 border-2 border-fade-blue  pl-4'
                                         />
                                     </div>
+
                                 </div>
                             </div>
 

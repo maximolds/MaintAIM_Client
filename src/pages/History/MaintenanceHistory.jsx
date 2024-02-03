@@ -56,7 +56,7 @@ const MaintenanceHistory = () => {
         <div className="flex justify-center items-center">
           {(authState.role === "Admin" || authState.role === "Manager") && (
             <Link
-              className={`w-10 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+              className={`w-10 h-5 justify-center items-center rounded-md bg-[#d0e272] text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
               to={`/maintenance-history/update/${row.id}`}
             >
               Edit
@@ -64,14 +64,14 @@ const MaintenanceHistory = () => {
           )}
 
           <Link
-            className={`m-2 w-10 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-10 justify-center items-center rounded-md bg-[#1ecbe1] text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/maintenance-history/read/${row.id}`}
           >
             Read
           </Link>
 
           <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             onClick={() =>{
               deleteMaintenanceHistory(row.id)
             }}
@@ -164,7 +164,7 @@ const MaintenanceHistory = () => {
         <DataTable
           columns={historycolumns}
           data={filteredPersonnel}
-          selectableRows
+         
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination
