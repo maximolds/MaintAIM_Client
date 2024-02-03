@@ -65,7 +65,7 @@ function MonthlyPMUHRead() {
                 </button>
             </div>
 
-            <form id="checklistForm">
+            <form id="checklistForm"  className='bg-[#f3f5f5]'>
                 <div ref={componentPdf} style={{ width: '100%' }}>
                     <h1 classname="text-3xl font-extrabold dark:text-gray-200 mb-2">Crane UH 1 & 2 INSPECTION CHECKLIST (MONTHLY)</h1>
                     <table>

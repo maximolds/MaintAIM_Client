@@ -349,7 +349,7 @@ function MonthlyPMUHUpdate() {
     return (
 
         <div>
-            <form id="checklistForm" onSubmit={onSubmit}>
+            <form id="checklistForm" onSubmit={onSubmit}  className='bg-[#f3f5f5]'>
                 <h1 classname="text-3xl font-extrabold dark:text-gray-200 mb-2">Crane UH 1 & 2 INSPECTION CHECKLIST (MONTHLY)</h1>
 
                 <div className='flex mt-2'>

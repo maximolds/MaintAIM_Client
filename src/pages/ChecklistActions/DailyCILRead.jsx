@@ -64,7 +64,7 @@ function DailyCILRead() {
 
 
 
-            <form id="checklistForm">
+            <form id="checklistForm" className='bg-[#f3f5f5]'>
 
 
 

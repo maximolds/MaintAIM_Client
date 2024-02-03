@@ -720,7 +720,7 @@ function MonthlyPM14Update() {
     return (
 
         <div>
-            <form id="checklistForm" onSubmit={onSubmit}>
+            <form id="checklistForm" onSubmit={onSubmit}  className='bg-[#f3f5f5]'>
                 <h1 className="text-3xl font-extrabold dark:text-gray-200 mb-2">CRANE 14 INSPECTION CHECKLIST (MONTHLY)</h1>
 
                 <div className='flex mt-2'>

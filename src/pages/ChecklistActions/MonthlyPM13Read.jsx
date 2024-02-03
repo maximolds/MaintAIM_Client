@@ -748,7 +748,7 @@ function MonthlyPM13() {
                 </button>
             </div>
 
-            <form id="checklistForm" >
+            <form id="checklistForm" className='bg-[#f3f5f5]'>
                 <div ref={componentPdf} style={{ width: '100%' }}>
                     <h1 className='text-3xl font-extrabold dark:text-gray-200'>CRANE 13 INSPECTION CHECKLIST (MONTHLY)</h1>
 

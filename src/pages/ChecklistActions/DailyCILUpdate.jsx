@@ -137,7 +137,7 @@ function DailyCILUpdate() {
         <div className='w-full h-full'>
 
 
-            <form id="checklistForm" onSubmit={onSubmit}>
+            <form id="checklistForm" onSubmit={onSubmit} className='bg-[#f3f5f5]'>
                 <h1 className='text-3xl font-extrabold dark:text-gray-200 mb-5'>DailyCIL
                     
                 </h1>

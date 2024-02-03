@@ -421,7 +421,7 @@ function MonthlyPMUL() {
             <Formik
                 initialValues={initialValues}
                 onSubmit={onSubmit}>
-                <Form id="checklistForm">
+                <Form id="checklistForm" className='bg-[#f3f5f5]'>
                     <h1 className='text-3xl font-extrabold dark:text-gray-200 mb-5'>UL CRANE INSPECTION CHECKLIST (MONTHLY)</h1>
 
                     <div className='flex mt-2'>
