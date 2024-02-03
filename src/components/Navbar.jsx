@@ -6,7 +6,7 @@ import { RiNotification2Line } from "react-icons/ri";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Tooltip } from 'react-tooltip';
 import avatar from '../data/avatar.jpg';
-import { Cart, Email, Notifications, UserProfile } from '.';
+import { Cart, Email, Notifications, UserProfile, LogoutConfirm } from '.';
 import { useStateContext } from "../contexts/ContextProvider";
 import { UserIcon } from "../assets/icons/UserIcon";
 import { EmailIcon } from "../assets/icons/EmailIcon";
@@ -225,7 +225,7 @@ const Navbar = () => {
         {isClicked.cart && <Cart />}
         <Email onClose={handleOnClose} visble={showEmailModal} />
         {isClicked.notifications && <Notifications />}
-        <UserProfile onClose={handleOnClose} visble={showUserProfileModal} />
+        <LogoutConfirm onClose={handleOnClose} visble={showUserProfileModal} />
       </div>
 
     </div>

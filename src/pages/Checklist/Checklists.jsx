@@ -25,7 +25,7 @@ const Checklists = () => {
       sortable: true,
     },
     {
-      name: 'Insepecte by',
+      name: 'Inspected by',
       selector: row => row.Daily_CIL_inspected_by,
       sortable: true,
     },
@@ -55,6 +55,15 @@ const Checklists = () => {
           >
             Read
           </Link>
+
+          <button
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            onClick={() =>{
+              deleteDaily(row.id)
+            }}
+          >
+            Delete
+          </button>
         </div>
       ),
     },
@@ -72,7 +81,7 @@ const Checklists = () => {
       sortable: true,
     },
     {
-      name: 'Insepected by',
+      name: 'Inspected by',
       selector: row => row.ul_crane_inspected_by,
       sortable: true,
     },
@@ -102,6 +111,15 @@ const Checklists = () => {
           >
             Read
           </Link>
+
+          <button
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            onClick={() =>{
+              deleteUL(row.id)
+            }}
+          >
+            Delete
+          </button>
         </div>
       ),
     },
@@ -119,7 +137,7 @@ const Checklists = () => {
       sortable: true,
     },
     {
-      name: 'Insepected by',
+      name: 'Inspected by',
       selector: row => row.UH_crane_inspected_by,
       sortable: true,
     },
@@ -149,6 +167,14 @@ const Checklists = () => {
           >
             Read
           </Link>
+          <button
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            onClick={() =>{
+              deleteUH(row.id)
+            }}
+          >
+            Delete
+          </button>
         </div>
       ),
     },
@@ -166,7 +192,7 @@ const Checklists = () => {
       sortable: true,
     },
     {
-      name: 'Insepected by',
+      name: 'Inspected by',
       selector: row => row.crane13_inspected_by,
       sortable: true,
     },
@@ -196,6 +222,14 @@ const Checklists = () => {
           >
             Read
           </Link>
+          <button
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            onClick={() =>{
+              deleteCrane13(row.id)
+            }}
+          >
+            Delete
+          </button>
         </div>
       ),
     },
@@ -213,7 +247,7 @@ const Checklists = () => {
       sortable: true,
     },
     {
-      name: 'Insepected by',
+      name: 'Inspected by',
       selector: row => row.crane14_inspected_by,
       sortable: true,
     },
@@ -243,6 +277,14 @@ const Checklists = () => {
           >
             Read
           </Link>
+          <button
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            onClick={() =>{
+              deleteCrane14(row.id)
+            }}
+          >
+            Delete
+          </button>
         </div>
       ),
     },
@@ -381,6 +423,52 @@ const Checklists = () => {
     documentTitle: `Crane 14 Checklist`,
     onAfterPrint: () => alert("Data saved in PDF")
   });
+
+  const deleteDaily = (id) => {
+    axios
+      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/dailychecklist/${id}`, {
+      })
+      .then(() => {
+        alert("delete row daily")
+      });
+  }
+
+  const deleteUL = (id) => {
+    axios
+      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/ulchecklist/${id}`, {
+      })
+      .then(() => {
+        alert("delete row ULCheckList")
+      });
+  }
+
+  const deleteUH = (id) => {
+    axios
+      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/uhchecklist/${id}`, {
+      })
+      .then(() => {
+        alert("delete row UHCheckList")
+      });
+  }
+
+  const deleteCrane13 = (id) => {
+    axios
+      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane13checklist/${id}`, {
+      })
+      .then(() => {
+        alert("delete row crane13checklist")
+      });
+  }
+
+  const deleteCrane14 = (id) => {
+    axios
+      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane14checklist/${id}`, {
+      })
+      .then(() => {
+        alert("delete row crane14checklist")
+      });
+  }
+
 
 
   return (

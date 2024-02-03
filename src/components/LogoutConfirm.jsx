@@ -12,7 +12,8 @@ function LogoutConfirm({ visble, onClose }) {
         isClicked, setIsClicked, handleClick,
         screenSize, setScreenSize, currentColor,
         showEmailModal, setShowEmailModal, handleOnClose,
-        showUserProfileModal, setShowUserProfileModal } = useStateContext();
+        showUserProfileModal, setShowUserProfileModal,
+        showLogoutModal, setShowLogoutModal } = useStateContext();
 
     const handleOnCloseConfirm = (e) => {
         if (e.target.id === 'container')
@@ -26,6 +27,13 @@ function LogoutConfirm({ visble, onClose }) {
         role:"",
         status: false,
       });
+
+
+      useEffect(() => {
+        setShowUserProfileModal(false);
+        setShowLogoutModal(false);
+    }, []);
+      
     
       useEffect(() => {
         axios

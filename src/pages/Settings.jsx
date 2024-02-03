@@ -48,6 +48,15 @@ const Settings = () => {
       });
   }, []);
 
+  const deleteUser = (id) => {
+    axios
+      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth/${id}`, {
+      })
+      .then(() => {
+        alert("delete row daily")
+      });
+  }
+
   return (
 
 
@@ -92,10 +101,22 @@ const Settings = () => {
                       <UserIcon />
                     </div>
                   </div>
-                  <div className='pl-3'>
-                    <div><span className='font-bold text-black'>Username: </span>{value.username}</div>
-                    <div><span className='font-bold text-black'>Email: </span>{value.email}</div>
-                    <div><span className='font-bold text-black'>Role: </span>{value.role}</div>
+                  <div className='flex flex-col justify-between'>
+                    <div className='pl-3'>
+                      <div><span className='font-bold text-black'>Username: </span>{value.username}</div>
+                      <div><span className='font-bold text-black'>Email: </span>{value.email}</div>
+                      <div><span className='font-bold text-black'>Role: </span>{value.role}</div>
+                    </div>
+                    <div className=''>
+                      <button
+                        className={' m-2 w-20 h-5  rounded-md bg-[#ffffff] text-[#86ACBB] hover:bg-red-500 focus:bg-red-500'}
+                        onClick={() => {
+                          deleteUser(value.id)
+                        }}
+                      >
+                        Delete
+                      </button>
+                    </div>
                   </div>
 
                 </div>

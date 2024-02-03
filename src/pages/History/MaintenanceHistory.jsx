@@ -1,12 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Header } from '../../components';
 import axios from "axios";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import DataTable from 'react-data-table-component';
 import { useReactToPrint } from 'react-to-print'
 
 const MaintenanceHistory = () => {
 
+  let navigate = useNavigate();
 
   const [isClicked, setIsClicked] = useState(false);
 
@@ -68,6 +69,15 @@ const MaintenanceHistory = () => {
           >
             Read
           </Link>
+
+          <button
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            onClick={() =>{
+              deleteMaintenanceHistory(row.id)
+            }}
+          >
+            Delete
+          </button>
         </div>
       ),
     },
@@ -121,6 +131,14 @@ const MaintenanceHistory = () => {
     onAfterPrint: () => alert("Data saved in PDF")
   });
 
+  const deleteMaintenanceHistory = (id) => {
+    axios
+      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/maintenancehistory/${id}`, {
+      })
+      .then(() => {
+        alert("delete success")
+      });
+  }
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
