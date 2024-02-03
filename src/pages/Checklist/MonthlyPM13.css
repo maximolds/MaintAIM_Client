@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center-align the content within the header */
-    background: #ffffff;
+    background: #f3f5f5;
     padding: 10px;
     color: #000000;
     text-align: center;

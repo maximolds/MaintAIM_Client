@@ -71,7 +71,7 @@ const MaintenanceHistory = () => {
           </Link>
 
           <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             onClick={() =>{
               deleteMaintenanceHistory(row.id)
             }}
@@ -171,7 +171,7 @@ const MaintenanceHistory = () => {
           title="Daily Checklist"
           actions={<button
             onClick={generateHistoryPDF}
-            className={`w-20 h-5 text-12 bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
+            className={`w-20 h-5 text-12 bg-[#330034] text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
             Export</button>}
           subHeader
           subHeaderComponent={
