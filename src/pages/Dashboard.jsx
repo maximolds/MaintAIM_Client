@@ -48,15 +48,15 @@ const Dashboard = () => {
                   </p>
                 </div>
               </div>
-              <div className='mt-6 text-center '>
+              <div className=''>
                 <NavLink
                   to={`/user-guide`}
                   style={{ backgroundColor: currentColor }}
-                  className={`text-[12px] font-extrabold opacity-0.9 p-4 hover:bg-white w-130 h-50
-              pt-5 rounded-xl customShadow2 m-4  bg-white flex justify-items-center  text-center
+                  className={`text-[14px] font-extrabold opacity-0.9 hover:bg-white w-130 h-50
+               rounded-2xl customShadow2 m-4  mt-8 bg-white justify-center flex items-center text-center
               ${activeMenu ? 'mr-0' : 'mr-0 '}`}
                 >
-                  <p className='text-center justify-center items-center pl-2'>
+                  <p className='text-center justify-center items-cente '>
                     Learn More
                   </p>
                 </NavLink>

@@ -139,7 +139,7 @@ function DailyCILUpdate() {
 
             <form id="checklistForm" onSubmit={onSubmit}>
                 <h1 className='text-3xl font-extrabold dark:text-gray-200 mb-5'>DailyCIL
-                    <span style={{ color: currentColor }}> {id}</span>
+                    
                 </h1>
                 <div className='flex mt-2'>
                     <button

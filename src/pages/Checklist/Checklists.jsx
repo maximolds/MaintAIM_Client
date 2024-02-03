@@ -44,20 +44,20 @@ const Checklists = () => {
       cell: row => (
         <div className="flex justify-center items-center">
           <Link
-            className={`w-10 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`w-10 h-5 justify-center items-center rounded-md bg-[#d0e272] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/daily/update/${row.id}`}
           >
             Edit
           </Link>
           <Link
-            className={`m-2 w-10 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-10 justify-center items-center rounded-md bg-[#1ecbe1] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/daily/read/${row.id}`}
           >
             Read
           </Link>
 
           <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             onClick={() =>{
               deleteDaily(row.id)
             }}
@@ -100,20 +100,20 @@ const Checklists = () => {
       cell: row => (
         <div className="flex justify-center items-center">
           <Link
-            className={`w-10 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`w-10 h-5 justify-center items-center rounded-md bg-[#d0e272] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/pmul/update/${row.id}`}
           >
             Edit
           </Link>
           <Link
-            className={`m-2 w-10 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-10 justify-center items-center rounded-md bg-[#1ecbe1] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/pmul/read/${row.id}`}
           >
             Read
           </Link>
 
           <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             onClick={() =>{
               deleteUL(row.id)
             }}
@@ -156,19 +156,19 @@ const Checklists = () => {
       cell: row => (
         <div className="flex justify-center items-center">
           <Link
-            className={`w-10 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`w-10 h-5 justify-center items-center rounded-md bg-[#d0e272] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/pmuh/update/${row.id}`}
           >
             Edit
           </Link>
           <Link
-            className={`m-2 w-10 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-10 justify-center items-center rounded-md bg-[#1ecbe1] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/pmuh/read/${row.id}`}
           >
             Read
           </Link>
           <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             onClick={() =>{
               deleteUH(row.id)
             }}
@@ -211,19 +211,19 @@ const Checklists = () => {
       cell: row => (
         <div className="flex justify-center items-center">
           <Link
-            className={`w-10 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`w-10 h-5 justify-center items-center rounded-md bg-[#d0e272] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/crane13/update/${row.id}`}
           >
             Edit
           </Link>
           <Link
-            className={`m-2 w-10 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-10 justify-center items-center rounded-md bg-[#1ecbe1] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/crane13/read/${row.id}`}
           >
             Read
           </Link>
           <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             onClick={() =>{
               deleteCrane13(row.id)
             }}
@@ -266,19 +266,19 @@ const Checklists = () => {
       cell: row => (
         <div className="flex justify-center items-center">
           <Link
-            className={`w-10 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`w-10 h-5 justify-center items-center rounded-md bg-[#d0e272] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/crane14/update/${row.id}`}
           >
             Edit
           </Link>
           <Link
-            className={`m-2 w-10 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-10 justify-center items-center rounded-md bg-[#1ecbe1] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/crane14/read/${row.id}`}
           >
             Read
           </Link>
           <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             onClick={() =>{
               deleteCrane14(row.id)
             }}
@@ -504,7 +504,7 @@ const Checklists = () => {
           title="Daily Checklist"
           actions={<button
             onClick={generateDailyPDF}
-            className={`w-20 h-5 text-12 bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
+            className={`w-20 h-5 text-12 bg-[#330034] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
             Export</button>}
           subHeader
           subHeaderComponent={
@@ -530,7 +530,7 @@ const Checklists = () => {
           title="UH Crane 1 & 2"
           actions={<button
             onClick={generateUHPDF}
-            className={`w-20 h-5 text-12 bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
+            className={`w-20 h-5 text-12 bg-[#330034] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
             Export</button>}
           subHeader
           subHeaderComponent={
@@ -556,7 +556,7 @@ const Checklists = () => {
           title="UL Crane 3 & 4"
           actions={<button
             onClick={generateULPDF}
-            className={`w-20 h-5 text-12 bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
+            className={`w-20 h-5 text-12 bg-[#330034] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
             Export</button>}
           subHeader
           subHeaderComponent={
@@ -582,7 +582,7 @@ const Checklists = () => {
           title="Crane 13"
           actions={<button
             onClick={generateCrane13PDF}
-            className={`w-20 h-5 text-12 bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
+            className={`w-20 h-5 text-12 bg-[#330034] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
             Export</button>}
           subHeader
           subHeaderComponent={
@@ -608,7 +608,7 @@ const Checklists = () => {
           title="Crane 14"
           actions={<button
             onClick={generateCrane14PDF}
-            className={`w-20 h-5 text-12 bg-blue-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
+            className={`w-20 h-5 text-12 bg-[#330034] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
             Export</button>}
           subHeader
           subHeaderComponent={

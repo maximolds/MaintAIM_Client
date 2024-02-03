@@ -1,22 +1,22 @@
 .customShadow {
-    --tw-shadow: 0 20px 13px rgba(134, 172, 187, 0.482), 0 8px 5px rgba(134, 172, 187, 0.591);
+    --tw-shadow: 0 5px 2px rgba(134, 172, 187, 0.482), 0 0px 0px rgba(134, 172, 187, 0.591);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #3065e100), var(--tw-ring-shadow, 0 0 #3065e100), var(--tw-shadow);
   transition: box-shadow 0.3s ease;
   }
 
   .customShadow:hover {
-    --tw-shadow: 0 20px 13px rgba(134, 172, 187, 0.792), 0 8px 5px rgba(134, 172, 187, 1);
+    --tw-shadow: 0 10px 4px rgba(134, 172, 187, 0.792), 0 0px 0px rgba(134, 172, 187, 1);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #33e13000), var(--tw-ring-shadow, 0 0 #33e13000), var(--tw-shadow);
   }
 
   .customShadow2 {
-    --tw-shadow: 0 20px 13px rgba(25, 63, 78, 0.482), 0 8px 5px rgba(25, 63, 78, 0.591);
+    --tw-shadow: 0 5px 2px rgba(25, 63, 78, 0.482), 0 2px 3px rgba(25, 63, 78, 0.591);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #3065e100), var(--tw-ring-shadow, 0 0 #3065e100), var(--tw-shadow);
   transition: box-shadow 0.3s ease;
   }
 
   .customShadow2:hover {
-    --tw-shadow: 0 20px 13px rgba(25, 63, 78, 0.792), 0 8px 5px rgba(25, 63, 78, 1);
+    --tw-shadow: 0 5px 2px rgba(25, 63, 78, 0.792), 0 2px 3px rgba(25, 63, 78, 1);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #33e13000), var(--tw-ring-shadow, 0 0 #33e13000), var(--tw-shadow);
   }
 
