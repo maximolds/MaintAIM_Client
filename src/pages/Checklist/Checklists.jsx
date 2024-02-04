@@ -13,6 +13,36 @@ const Checklists = () => {
     setIsClicked(!isClicked);
   };
 
+  const [authState, setAuthState] = useState({
+    username: "",
+    id: 0,
+    firstname: "",
+    status: false,
+    role: "",
+  });
+
+  useEffect(() => {
+    axios
+      .get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth/auth", {
+        headers: {
+          accessToken: localStorage.getItem("accessToken"),
+        },
+      })
+      .then((response) => {
+        if (response.data.error) {
+          setAuthState({ ...authState, status: false });
+        } else {
+          setAuthState({
+            username: response.data.username,
+            id: response.data.id,
+            firstname: response.data.firstname,
+            role: response.data.role,
+            status: true,
+          });
+        }
+      });
+  }, []);
+
   const dailycolumns = [
     {
       name: 'ID',
@@ -55,15 +85,16 @@ const Checklists = () => {
           >
             Read
           </Link>
-
-          <button
-            className={`w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
-            onClick={() =>{
-              deleteDaily(row.id)
-            }}
-          >
-            Delete
-          </button>
+          {(authState.role === "Admin" || authState.role === "Manager") && (
+            <button
+              className={`w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+              onClick={() => {
+                deleteDaily(row.id)
+              }}
+            >
+              Delete
+            </button>
+          )}
         </div>
       ),
     },
@@ -111,15 +142,16 @@ const Checklists = () => {
           >
             Read
           </Link>
-
-          <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
-            onClick={() =>{
-              deleteUL(row.id)
-            }}
-          >
-            Delete
-          </button>
+          {(authState.role === "Admin" || authState.role === "Manager") && (
+            <button
+              className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+              onClick={() => {
+                deleteUL(row.id)
+              }}
+            >
+              Delete
+            </button>
+          )}
         </div>
       ),
     },
@@ -167,14 +199,16 @@ const Checklists = () => {
           >
             Read
           </Link>
-          <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
-            onClick={() =>{
-              deleteUH(row.id)
-            }}
-          >
-            Delete
-          </button>
+          {(authState.role === "Admin" || authState.role === "Manager") && (
+            <button
+              className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+              onClick={() => {
+                deleteUH(row.id)
+              }}
+            >
+              Delete
+            </button>
+          )}
         </div>
       ),
     },
@@ -222,14 +256,16 @@ const Checklists = () => {
           >
             Read
           </Link>
-          <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
-            onClick={() =>{
-              deleteCrane13(row.id)
-            }}
-          >
-            Delete
-          </button>
+          {(authState.role === "Admin" || authState.role === "Manager") && (
+            <button
+              className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+              onClick={() => {
+                deleteCrane13(row.id)
+              }}
+            >
+              Delete
+            </button>
+          )}
         </div>
       ),
     },
@@ -277,14 +313,16 @@ const Checklists = () => {
           >
             Read
           </Link>
-          <button
-            className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
-            onClick={() =>{
-              deleteCrane14(row.id)
-            }}
-          >
-            Delete
-          </button>
+          {(authState.role === "Admin" || authState.role === "Manager") && (
+            <button
+              className={`m-2 w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
+              onClick={() => {
+                deleteCrane14(row.id)
+              }}
+            >
+              Delete
+            </button>
+          )}
         </div>
       ),
     },
@@ -356,7 +394,11 @@ const Checklists = () => {
 
   useEffect(() => {
     const result = listOfDailyCheckList.filter(person => {
-      return person.Daily_CIL_inspected_by.toLowerCase().match(search.toLowerCase());
+      return String(person.Daily_CIL_Crane_Number).toLowerCase().match(search.toLowerCase()) ||
+      String(person.Daily_CIL_inspected_by).toLowerCase().match(search.toLowerCase()) ||
+      String(person.Daily_CIL_date).toLowerCase().match(search.toLowerCase()) ||
+      String(person.id).toLowerCase().match(search.toLowerCase()) ||
+      String(person.Daily_CIL_approved_by).toLowerCase().match(search.toLowerCase());
     })
 
     setFilteredPersonnel(result)
@@ -364,7 +406,11 @@ const Checklists = () => {
 
   useEffect(() => {
     const ulresult = listOfCraneULCheckList.filter(ulperson => {
-      return ulperson.ul_crane_inspected_by.toLowerCase().match(ulsearch.toLowerCase());
+      return String(ulperson.ul_crane_no).toLowerCase().match(ulsearch.toLowerCase()) ||
+      String(ulperson.ul_crane_inspected_by).toLowerCase().match(ulsearch.toLowerCase()) ||
+      String(ulperson.ul_crane_date).toLowerCase().match(ulsearch.toLowerCase()) ||
+      String(ulperson.id).toLowerCase().match(ulsearch.toLowerCase()) ||
+      String(ulperson.ul_crane_approved_by).toLowerCase().match(ulsearch.toLowerCase());
     })
 
     setulFilteredPersonnel(ulresult)
@@ -372,7 +418,11 @@ const Checklists = () => {
 
   useEffect(() => {
     const uhresult = listOfCraneUHCheckList.filter(uhperson => {
-      return uhperson.UH_crane_inspected_by.toLowerCase().match(uhsearch.toLowerCase());
+      return String(uhperson.UH_crane_no).toLowerCase().match(uhsearch.toLowerCase()) ||
+      String(uhperson.UH_crane_inspected_by).toLowerCase().match(uhsearch.toLowerCase()) ||
+      String(uhperson.UH_crane_approved_by).toLowerCase().match(uhsearch.toLowerCase()) ||
+      String(uhperson.id).toLowerCase().match(uhsearch.toLowerCase()) ||
+      String(uhperson.UH_crane_date).toLowerCase().match(uhsearch.toLowerCase());
     })
 
     setuhFilteredPersonnel(uhresult)
@@ -380,7 +430,11 @@ const Checklists = () => {
 
   useEffect(() => {
     const crane13result = listOfCrane13CheckList.filter(crane13person => {
-      return crane13person.crane13_inspected_by.toLowerCase().match(crane13Search.toLowerCase());
+      return String(crane13person.crane13_no).toLowerCase().match(crane13Search.toLowerCase()) ||
+      String(crane13person.crane13_inspected_by).toLowerCase().match(crane13Search.toLowerCase()) ||
+      String(crane13person.crane13_approved_by).toLowerCase().match(crane13Search.toLowerCase()) ||
+      String(crane13person.id).toLowerCase().match(crane13Search.toLowerCase()) ||
+      String(crane13person.crane13_date).toLowerCase().match(crane13Search.toLowerCase());
     })
 
     setcrane13FilteredPersonnel(crane13result)
@@ -388,7 +442,11 @@ const Checklists = () => {
 
   useEffect(() => {
     const crane14result = listOfCrane14CheckList.filter(crane14person => {
-      return crane14person.crane14_inspected_by.toLowerCase().match(crane14Search.toLowerCase());
+      return String(crane14person.crane14_no).toLowerCase().match(crane14Search.toLowerCase()) ||
+      String(crane14person.crane14_inspected_by).toLowerCase().match(crane14Search.toLowerCase()) ||
+      String(crane14person.crane14_approved_by).toLowerCase().match(crane14Search.toLowerCase()) ||
+      String(crane14person.id).toLowerCase().match(crane14Search.toLowerCase()) ||
+      String(crane14person.crane14_date).toLowerCase().match(crane14Search.toLowerCase());
     })
 
     setcrane14FilteredPersonnel(crane14result)
@@ -497,7 +555,7 @@ const Checklists = () => {
         <DataTable
           columns={dailycolumns}
           data={filteredPersonnel}
-     
+
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination
@@ -523,7 +581,7 @@ const Checklists = () => {
         <DataTable
           columns={uhcolumns}
           data={uhfilteredPersonnel}
-       
+
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination
@@ -549,7 +607,7 @@ const Checklists = () => {
         <DataTable
           columns={ulcolumns}
           data={ulfilteredPersonnel}
-        
+
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination
@@ -601,7 +659,7 @@ const Checklists = () => {
         <DataTable
           columns={crane14columns}
           data={crane14filteredPersonnel}
-    
+
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination

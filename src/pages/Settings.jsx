@@ -67,7 +67,7 @@ const Settings = () => {
           title="User Manager"
         />
 
-        {(authState.role === "Admin" || authState.role === "Manager") && (
+        {(authState.role === "Admin" ) && (
           <NavLink
             to={`/registration`}
             className={`text-12 font-extrabold opacity-0.9 p-4 hover:bg-white w-97 h-4
@@ -107,7 +107,7 @@ const Settings = () => {
                       <div><span className='font-bold text-black'>Email: </span>{value.email}</div>
                       <div><span className='font-bold text-black'>Role: </span>{value.role}</div>
                     </div>
-                    {(authState.role === "Admin" || authState.role === "Manager") && (
+                    {(authState.role === "Admin") && (
                     <div className=''>
                       <button
                         className={' m-2 w-20 h-5  rounded-md bg-[#ffffff] text-[#86ACBB] hover:bg-red-500 focus:bg-red-500'}
