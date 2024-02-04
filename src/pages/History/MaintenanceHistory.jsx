@@ -97,7 +97,12 @@ const MaintenanceHistory = () => {
 
   useEffect(() => {
     const result = listOfMaintenanceHistory.filter(person => {
-      return person.personnel_incharge.toLowerCase().match(search.toLowerCase());
+      return person.personnel_incharge.toLowerCase().match(search.toLowerCase())||
+      String(person.crane_number).toLowerCase().match(search.toLowerCase()) ||
+      String(person.part_replaced).toLowerCase().match(search.toLowerCase()) ||
+      String(person.id).toLowerCase().match(search.toLowerCase()) ||
+      String(person.date_replaced).toLowerCase().match(search.toLowerCase()) ||
+      String(person.status).toLowerCase().match(search.toLowerCase());
     })
 
     setFilteredPersonnel(result)
