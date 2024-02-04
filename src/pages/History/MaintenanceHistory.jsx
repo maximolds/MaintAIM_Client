@@ -173,7 +173,7 @@ const MaintenanceHistory = () => {
           fixedHeader
           fixedHeaderScrollHeight='400px'
           pagination
-          title="Daily Checklist"
+          title="Maintenance History"
           actions={<button
             onClick={generateHistoryPDF}
             className={`w-20 h-5 text-12 bg-[#330034] text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}>
