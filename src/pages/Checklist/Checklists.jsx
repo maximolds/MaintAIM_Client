@@ -23,7 +23,7 @@ const Checklists = () => {
 
   useEffect(() => {
     axios
-      .get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth/auth", {
+      .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },
@@ -358,35 +358,35 @@ const Checklists = () => {
   const crane14Pdf = useRef();
 
   useEffect(() => {
-    axios.get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/dailychecklist").then((response) => {
+    axios.get("https://maintaimdb-044f7fcd2d92.herokuapp.com/dailychecklist").then((response) => {
       setListOfDailyCheckList(response.data);
       setFilteredPersonnel(response.data)
     });
   }, []);
 
   useEffect(() => {
-    axios.get('https://maintaim-db-5eb6eb864ba7.herokuapp.com/ulchecklist').then((response) => {
+    axios.get('https://maintaimdb-044f7fcd2d92.herokuapp.com/ulchecklist').then((response) => {
       setListOfCraneULCheckList(response.data);
       setulFilteredPersonnel(response.data);
     });
   }, []);
 
   useEffect(() => {
-    axios.get('https://maintaim-db-5eb6eb864ba7.herokuapp.com/uhchecklist').then((response) => {
+    axios.get('https://maintaimdb-044f7fcd2d92.herokuapp.com/uhchecklist').then((response) => {
       setListOfCraneUHheckList(response.data);
       setuhFilteredPersonnel(response.data);
     });
   }, []);
 
   useEffect(() => {
-    axios.get('https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane13checklist').then((response) => {
+    axios.get('https://maintaimdb-044f7fcd2d92.herokuapp.com/crane13checklist').then((response) => {
       setListOfCrane13CheckList(response.data);
       setcrane13FilteredPersonnel(response.data);
     });
   }, []);
 
   useEffect(() => {
-    axios.get('https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane14checklist').then((response) => {
+    axios.get('https://maintaimdb-044f7fcd2d92.herokuapp.com/crane14checklist').then((response) => {
       setListOfCrane14CheckList(response.data);
       setcrane14FilteredPersonnel(response.data);
     });
@@ -484,7 +484,7 @@ const Checklists = () => {
 
   const deleteDaily = (id) => {
     axios
-      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/dailychecklist/${id}`, {
+      .delete(`https://maintaimdb-044f7fcd2d92.herokuapp.com/dailychecklist/${id}`, {
       })
       .then(() => {
         alert("delete row daily")
@@ -493,7 +493,7 @@ const Checklists = () => {
 
   const deleteUL = (id) => {
     axios
-      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/ulchecklist/${id}`, {
+      .delete(`https://maintaimdb-044f7fcd2d92.herokuapp.com/ulchecklist/${id}`, {
       })
       .then(() => {
         alert("delete row ULCheckList")
@@ -502,7 +502,7 @@ const Checklists = () => {
 
   const deleteUH = (id) => {
     axios
-      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/uhchecklist/${id}`, {
+      .delete(`https://maintaimdb-044f7fcd2d92.herokuapp.com/uhchecklist/${id}`, {
       })
       .then(() => {
         alert("delete row UHCheckList")
@@ -511,7 +511,7 @@ const Checklists = () => {
 
   const deleteCrane13 = (id) => {
     axios
-      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane13checklist/${id}`, {
+      .delete(`https://maintaimdb-044f7fcd2d92.herokuapp.com/crane13checklist/${id}`, {
       })
       .then(() => {
         alert("delete row crane13checklist")
@@ -520,7 +520,7 @@ const Checklists = () => {
 
   const deleteCrane14 = (id) => {
     axios
-      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane14checklist/${id}`, {
+      .delete(`https://maintaimdb-044f7fcd2d92.herokuapp.com/crane14checklist/${id}`, {
       })
       .then(() => {
         alert("delete row crane14checklist")

@@ -26,7 +26,7 @@ const MaintenanceSchedule = () => {
   const [listOfMaintenanceScheduler, setListOfMaintenanceScheduler] = useState([]);
 
   useEffect(() => {
-    axios.get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/maintenancescheduler").then((response) => {
+    axios.get("https://maintaimdb-044f7fcd2d92.herokuapp.com/maintenancescheduler").then((response) => {
       setListOfMaintenanceScheduler(response.data);
     });
   }, []);

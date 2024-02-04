@@ -89,7 +89,7 @@ const MaintenanceHistory = () => {
   const historyPdf = useRef();
 
   useEffect(() => {
-    axios.get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/maintenancehistory").then((response) => {
+    axios.get("https://maintaimdb-044f7fcd2d92.herokuapp.com/maintenancehistory").then((response) => {
       setListOfMaintenanceHistory(response.data);
       setFilteredPersonnel(response.data);
     });
@@ -110,7 +110,7 @@ const MaintenanceHistory = () => {
 
   useEffect(() => {
     axios
-      .get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth/auth", {
+      .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },
@@ -138,7 +138,7 @@ const MaintenanceHistory = () => {
 
   const deleteMaintenanceHistory = (id) => {
     axios
-      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/maintenancehistory/${id}`, {
+      .delete(`https://maintaimdb-044f7fcd2d92.herokuapp.com/maintenancehistory/${id}`, {
       })
       .then(() => {
         alert("delete success")

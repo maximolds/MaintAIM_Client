@@ -13,7 +13,7 @@ const Settings = () => {
   const { activeMenu, setActiveMenu } = useStateContext();
 
   useEffect(() => {
-    axios.get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth").then((response) => {
+    axios.get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth").then((response) => {
       setListOfUsers(response.data);
     });
   }, []);
@@ -28,7 +28,7 @@ const Settings = () => {
 
   useEffect(() => {
     axios
-      .get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth/auth", {
+      .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },
@@ -50,7 +50,7 @@ const Settings = () => {
 
   const deleteUser = (id) => {
     axios
-      .delete(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth/${id}`, {
+      .delete(`https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/${id}`, {
       })
       .then(() => {
         alert(`delete row daily ${id}`)

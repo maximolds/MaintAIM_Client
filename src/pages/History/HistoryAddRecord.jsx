@@ -32,7 +32,7 @@ const HistoryAddRecord = () => {
 
 
     const onSubmit = (data) => {
-        axios.post("https://maintaim-db-5eb6eb864ba7.herokuapp.com/maintenancehistory", data,
+        axios.post("https://maintaimdb-044f7fcd2d92.herokuapp.com/maintenancehistory", data,
             {
                 headers: {
                     accessToken: localStorage.getItem("accessToken"),

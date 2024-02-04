@@ -58,7 +58,7 @@ function Registration() {
         data.append('role', values.role);
         data.append('firstname', values.firstname);
         data.append('lastname', values.lastname);
-        axios.post("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth", data).then(() => {
+        axios.post("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth", data).then(() => {
             console.log(data);
             navigate("/");
         });

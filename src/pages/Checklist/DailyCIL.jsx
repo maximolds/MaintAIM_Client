@@ -105,7 +105,7 @@ function DailyCIL() {
 
 
   const onSubmit = (data) => {
-    axios.post("https://maintaim-db-5eb6eb864ba7.herokuapp.com/dailychecklist", data,
+    axios.post("https://maintaimdb-044f7fcd2d92.herokuapp.com/dailychecklist", data,
       {
         headers: {
           accessToken: localStorage.getItem("accessToken"),

@@ -60,7 +60,7 @@ const Navbar = () => {
 
   useEffect(() => {
     axios
-      .get("https://maintaim-db-5eb6eb864ba7.herokuapp.com/auth/auth", {
+      .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },

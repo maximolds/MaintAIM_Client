@@ -109,7 +109,7 @@ function DailyCILUpdate() {
     let navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/dailychecklist/byId/${id}`).then((response) => {
+        axios.get(`https://maintaimdb-044f7fcd2d92.herokuapp.com/dailychecklist/byId/${id}`).then((response) => {
             setListOfDailyCheckList(response.data)
             setInitialValues(response.data)
             console.log(response.data)
@@ -123,7 +123,7 @@ function DailyCILUpdate() {
     const onSubmit = (e) => {
         e.preventDefault();
         axios.put(
-            `https://maintaim-db-5eb6eb864ba7.herokuapp.com/dailychecklist/update/byId/${id}`, initialValues).then(res => {
+            `https://maintaimdb-044f7fcd2d92.herokuapp.com/dailychecklist/update/byId/${id}`, initialValues).then(res => {
                 console.log(res);
                 navigate('/checklists')
             }).catch(err => console.log(err));

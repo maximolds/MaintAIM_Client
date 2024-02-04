@@ -12,7 +12,7 @@ function DailyCILRead() {
     let navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/dailychecklist/byId/${id}`).then((response) => {
+        axios.get(`https://maintaimdb-044f7fcd2d92.herokuapp.com/dailychecklist/byId/${id}`).then((response) => {
             setListOfDailyCheckList(response.data)
             console.log(response.data)
         });

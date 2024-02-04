@@ -693,7 +693,7 @@ function MonthlyPM13Update() {
 
 
     useEffect(() => {
-        axios.get(`https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane13checklist/byId/${id}`).then((response) => {
+        axios.get(`https://maintaimdb-044f7fcd2d92.herokuapp.com/crane13checklist/byId/${id}`).then((response) => {
             setListOfCrane13CheckList(response.data)
             setInitialValues(response.data)
             console.log(response.data)
@@ -703,7 +703,7 @@ function MonthlyPM13Update() {
     const onSubmit = (e) => {
         e.preventDefault();
         axios.put(
-            `https://maintaim-db-5eb6eb864ba7.herokuapp.com/crane13checklist/update/byId/${id}`, initialValues).then(res => {
+            `https://maintaimdb-044f7fcd2d92.herokuapp.com/crane13checklist/update/byId/${id}`, initialValues).then(res => {
                 console.log(res);
                 navigate('/checklists')
             }).catch(err => console.log(err));
