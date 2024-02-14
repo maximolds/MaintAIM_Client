@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useStateContext } from '../../contexts/ContextProvider';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -346,7 +346,33 @@ function MonthlyPMUH() {
       });
   };
 
+  const [authState, setAuthState] = useState({
+    username: "",
+    id: 0,
+    firstname: "",
+    status: false,
+  });
 
+  useEffect(() => {
+    axios
+      .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
+        headers: {
+          accessToken: localStorage.getItem("accessToken"),
+        },
+      })
+      .then((response) => {
+        if (response.data.error) {
+          setAuthState({ ...authState, status: false });
+        } else {
+          setAuthState({
+            username: response.data.username,
+            id: response.data.id,
+            firstname: response.data.firstname,
+            status: true,
+          });
+        }
+      });
+  }, []);
 
   return (
     <Formik initialValues={initialValues}
@@ -384,7 +410,8 @@ function MonthlyPMUH() {
             <td>
               <div class="textbox-container">
                 <label for="UH_crane_inspected_by">Inspected by:</label>
-                <Field type="text" id="UH_crane_inspected_by" name="UH_crane_inspected_by" />
+                <Field type="text" id="UH_crane_inspected_by" name="UH_crane_inspected_by"
+                  value={authState.firstname} />
               </div>
             </td>
             <td>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "../Checklist/MonthlyPM13.css"
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useStateContext } from '../../contexts/ContextProvider';
@@ -707,6 +707,34 @@ function MonthlyPM13() {
             });
     };
 
+    const [authState, setAuthState] = useState({
+        username: "",
+        id: 0,
+        firstname: "",
+        status: false,
+      });
+    
+      useEffect(() => {
+        axios
+          .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
+            headers: {
+              accessToken: localStorage.getItem("accessToken"),
+            },
+          })
+          .then((response) => {
+            if (response.data.error) {
+              setAuthState({ ...authState, status: false });
+            } else {
+              setAuthState({
+                username: response.data.username,
+                id: response.data.id,
+                firstname: response.data.firstname,
+                status: true,
+              });
+            }
+          });
+      }, []);
+
     return (
 
         <Formik
@@ -745,7 +773,9 @@ items-center text-center`}
                         <td>
                             <div class="textbox-container">
                                 <label for="crane13_inspected_by">Inspected by:</label>
-                                <Field className='w-100' type="text" id="crane13_inspected_by" name="crane13_inspected_by" />
+                                <Field className='w-100' type="text" id="crane13_inspected_by"
+                                 name="crane13_inspected_by"
+                                 value={authState.firstname} />
                             </div>
                         </td>
                         <td>
@@ -2991,7 +3021,7 @@ items-center text-center`}
 
                 <h2 className='text-xl font-extrabold ml-3 mt-5 mb-2 dark:text-gray-200'>INSPECTION SUMMARY/RECOMMENDATION:</h2>
                 <div class="inspection-summary">
-                    <textarea id="CRANE13_INSPECTION_SUMMARY_RECOMMENDATION" name="CRANE13_INSPECTION_SUMMARY_RECOMMENDATION"></textarea>
+                    <Field as="textarea" className='border-black border w-[100%]' id="CRANE13_INSPECTION_SUMMARY_RECOMMENDATION" name="CRANE13_INSPECTION_SUMMARY_RECOMMENDATION"></Field>
                 </div>
 
                 <td>

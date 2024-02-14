@@ -1814,7 +1814,7 @@ function MonthlyPMUHRead() {
 
                         <tbody><tr>
                             <td colspan="2">
-                                <textarea id="UH_Crane_INSPECTION_SUMMARY" name="UH_Crane_INSPECTION_SUMMARY" rows="6" cols="50" />
+                                <textarea value={listOfUHCheckList.UH_Crane_INSPECTION_SUMMARY} className='border-black border w-[100%]' id="UH_Crane_INSPECTION_SUMMARY" name="UH_Crane_INSPECTION_SUMMARY" rows="6" cols="50" />
                             </td>
                         </tr>
                             <tr>

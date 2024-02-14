@@ -2204,7 +2204,7 @@ items-center text-center`}
                     <div class="inspection-summary">
 
                         onChange={(e) => setlistOfCraneULCheckList({ ...listOfCraneULCheckList, UL_crane_INSPECTION_SUMMARY_RECOMMENDATION: e.target.value })}
-                        value={listOfCraneULCheckList.UL_crane_INSPECTION_SUMMARY_RECOMMENDATION}  <textarea id="UL_crane_INSPECTION_SUMMARY_RECOMMENDATION" name="UL_crane_INSPECTION_SUMMARY_RECOMMENDATION"></textarea>
+                        value={listOfCraneULCheckList.UL_crane_INSPECTION_SUMMARY_RECOMMENDATION}  <textarea  value={listOfCraneULCheckList.UL_crane_INSPECTION_SUMMARY_RECOMMENDATION} as="textarea" className='border-black border w-[100%]' id="UL_crane_INSPECTION_SUMMARY_RECOMMENDATION" name="UL_crane_INSPECTION_SUMMARY_RECOMMENDATION"></textarea>
                     </div>
 
                     <td>

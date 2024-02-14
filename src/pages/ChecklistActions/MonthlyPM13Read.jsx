@@ -4386,7 +4386,7 @@ function MonthlyPM13() {
 
 
                         value={initialValues.CRANE13_INSPECTION_SUMMARY_RECOMMENDATION}
-                        <textarea id="CRANE13_INSPECTION_SUMMARY_RECOMMENDATION" name="CRANE13_INSPECTION_SUMMARY_RECOMMENDATION"></textarea>
+                        <textarea value={initialValues.CRANE13_INSPECTION_SUMMARY_RECOMMENDATION} as="textarea" className='border-black border w-[100%]' id="CRANE13_INSPECTION_SUMMARY_RECOMMENDATION" name="CRANE13_INSPECTION_SUMMARY_RECOMMENDATION"></textarea>
                     </div>
 
                     <td>

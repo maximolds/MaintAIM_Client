@@ -3717,7 +3717,7 @@ function MonthlyPM14Read() {
 
                     <h2 className="mt-10 text-2xl font-extrabold dark:text-gray-200 mb-2">INSPECTION SUMMARY/RECOMMENDATION:</h2>
                     <div class="inspection-summary">
-                        <textarea id="crane14_REPORT_SUMMARY" name="crane14_REPORT_SUMMARY"></textarea>
+                        <textarea value={listOfCrane14CheckList.crane14_REPORT_SUMMARY} as="textarea" className='border-black border w-[100%]' id="crane14_REPORT_SUMMARY" name="crane14_REPORT_SUMMARY"></textarea>
                     </div>
 
                     <td>
