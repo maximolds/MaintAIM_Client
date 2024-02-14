@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useStateContext } from '../../contexts/ContextProvider';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -121,6 +121,34 @@ function DailyCIL() {
       });
   };
 
+  const [authState, setAuthState] = useState({
+    username: "",
+    id: 0,
+    firstname: "",
+    status: false,
+  });
+
+  useEffect(() => {
+    axios
+      .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
+        headers: {
+          accessToken: localStorage.getItem("accessToken"),
+        },
+      })
+      .then((response) => {
+        if (response.data.error) {
+          setAuthState({ ...authState, status: false });
+        } else {
+          setAuthState({
+            username: response.data.username,
+            id: response.data.id,
+            firstname: response.data.firstname,
+            status: true,
+          });
+        }
+      });
+  }, []);
+
 
 
   return (
@@ -162,7 +190,8 @@ function DailyCIL() {
               <td>
                 <div class="textbox-container">
                   <label for="Daily_CIL_inspected_by">Inspected by:</label>
-                  <Field type="text" id="Daily_CIL_inspected_by" name="Daily_CIL_inspected_by" />
+                  <Field type="text" id="Daily_CIL_inspected_by" name="Daily_CIL_inspected_by"
+                  value={authState.firstname} />
                 </div>
               </td>
               <td>

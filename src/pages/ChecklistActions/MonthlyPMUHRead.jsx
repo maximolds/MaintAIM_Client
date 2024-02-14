@@ -26,11 +26,39 @@ function MonthlyPMUHRead() {
         onAfterPrint: () => alert("Data saved in PDF")
     });
 
+    const [authState, setAuthState] = useState({
+        username: "",
+        id: 0,
+        firstname: "",
+        status: false,
+      });
+    
+      useEffect(() => {
+        axios
+          .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
+            headers: {
+              accessToken: localStorage.getItem("accessToken"),
+            },
+          })
+          .then((response) => {
+            if (response.data.error) {
+              setAuthState({ ...authState, status: false });
+            } else {
+              setAuthState({
+                username: response.data.username,
+                id: response.data.id,
+                firstname: response.data.firstname,
+                status: true,
+              });
+            }
+          });
+      }, []);
 
     return (
 
         <div>
             <div className='flex justify-end mt-20 mr-4 md:mt-10'>
+            {(authState.role === "Admin" || authState.role === "Manager") && (
                 <Link
                     to={`/pmuh/update/${id}`}
                     //onClick={()=>navigate(-1)}
@@ -42,7 +70,7 @@ function MonthlyPMUHRead() {
                 >
                     Edit
                 </Link>
-
+            )}
                 <button
                     onClick={() => navigate('/checklists')}
                     className={`text-12 font-extrabold opacity-0.9 p-4 hover:bg-white w-80 h-2
