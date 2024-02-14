@@ -775,7 +775,7 @@ items-center text-center`}
                                 <label for="crane13_inspected_by">Inspected by:</label>
                                 <Field className='w-100' type="text" id="crane13_inspected_by"
                                  name="crane13_inspected_by"
-                                 value={authState.firstname} />
+                                 />
                             </div>
                         </td>
                         <td>

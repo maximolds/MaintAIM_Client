@@ -784,7 +784,7 @@ items-center text-center`}
                   <label for="crane14_inspected_by">Inspected by:</label>
                   <Field type="text" id="crane14_inspected_by" 
                   name="crane14_inspected_by"
-                  value={authState.firstname} />
+             />
                 </div>
               </td>
               <td>

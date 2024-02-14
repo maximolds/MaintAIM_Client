@@ -482,7 +482,7 @@ items-center text-center`}
                                 <div class="textbox-container">
                                     <label for="ul_crane_inspected_by">Inspected by:</label>
                                     <Field type="text" id="ul_crane_inspected_by" name="ul_crane_inspected_by"
-                                        value={authState.firstname}
+                                       
                                     />
                                 </div>
                             </td>

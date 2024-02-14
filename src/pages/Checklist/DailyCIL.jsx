@@ -191,7 +191,7 @@ function DailyCIL() {
                 <div class="textbox-container">
                   <label for="Daily_CIL_inspected_by">Inspected by:</label>
                   <Field type="text" id="Daily_CIL_inspected_by" name="Daily_CIL_inspected_by"
-                  value={authState.firstname} />
+                   />
                 </div>
               </td>
               <td>

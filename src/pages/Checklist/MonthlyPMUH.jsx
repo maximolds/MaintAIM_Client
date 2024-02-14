@@ -411,7 +411,7 @@ function MonthlyPMUH() {
               <div class="textbox-container">
                 <label for="UH_crane_inspected_by">Inspected by:</label>
                 <Field type="text" id="UH_crane_inspected_by" name="UH_crane_inspected_by"
-                  value={authState.firstname} />
+                  />
               </div>
             </td>
             <td>
