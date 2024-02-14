@@ -301,12 +301,14 @@ const Checklists = () => {
       name: 'Action',
       cell: row => (
         <div className="flex justify-center items-center">
+          {(authState.role === "Admin" || authState.role === "Manager") && (
           <Link
             className={`w-10 h-5 justify-center items-center rounded-md bg-[#d0e272] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/crane14/update/${row.id}`}
           >
             Edit
           </Link>
+          )}
           <Link
             className={`m-2 w-10 justify-center items-center rounded-md bg-[#1ecbe1] text-white hover:bg-[#86acbb] focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             to={`/crane14/read/${row.id}`}
@@ -540,6 +542,7 @@ const Checklists = () => {
           category="Page"
           title="Checklists"
         />
+        
         <NavLink
           to={`/checklistsmenu`}
           className={`text-12 font-extrabold opacity-0.9 p-4 hover:bg-white w-97 h-4

@@ -70,6 +70,7 @@ const MaintenanceHistory = () => {
             Read
           </Link>
 
+          {(authState.role === "Admin" || authState.role === "Manager") && (
           <button
             className={`w-11 h-5 justify-center items-center rounded-md bg-red-500 text-white hover:bg-red-500 focus:bg-red-500 ${isClicked ? 'bg-red-500' : ''}`}
             onClick={() =>{
@@ -78,6 +79,7 @@ const MaintenanceHistory = () => {
           >
             Delete
           </button>
+          )}
         </div>
       ),
     },

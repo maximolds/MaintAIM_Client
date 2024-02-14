@@ -15,3 +15,5 @@ export { default as SparkLine } from './Charts/SparkLine';
 export { default as Stacked } from './Charts/Stacked';
 export { default as ShowComponents } from './ShowComponents';
 export { default as LogoutConfirm } from './LogoutConfirm';
+export { default as FullScheduler } from './FullScheduler';
+export {default as AddEventModal} from './AddEventModal';

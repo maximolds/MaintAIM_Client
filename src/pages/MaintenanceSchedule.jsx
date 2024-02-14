@@ -17,7 +17,7 @@ import {
   scheduleData, kanbanData,
   kanbanGrid
 } from '../data/dummy';
-import { Header } from '../components';
+import { Header, FullScheduler } from '../components';
 
 const MaintenanceSchedule = () => {
 
@@ -115,21 +115,13 @@ const MaintenanceSchedule = () => {
           ></iframe>
         </div>
 
-        {/*<div className='mt-4'>
-          <ScheduleComponent
-            height="300px"
-            currentView='Agenda'
-            readOnly={true}
-            eventSettings={eventSettings}
-            dataBinding={onDataBinding}
-            selectedDate={new Date(2024, 0, 11)}
-            showHeaderBar={false}
-          >
-            <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
-          </ScheduleComponent>
-        </div> */}
+        <div>
+          <FullScheduler/>
+        </div>
+
 
       </div>
+      
 
 
 
