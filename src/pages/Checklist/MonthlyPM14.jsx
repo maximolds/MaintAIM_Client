@@ -12,6 +12,10 @@ function MonthlyPM14() {
   let navigate = useNavigate();
   const { currentColor, activeMenu, setActiveMenu } = useStateContext();
 
+  const validationSchema = Yup.object().shape({
+    crane14_inspected_by: Yup.string().required("Please click field and press space.")
+});
+
   const initialValues = {
     crane14_inspected_by: "",
     crane14_approved_by: "",
@@ -749,7 +753,8 @@ function MonthlyPM14() {
     <div>
       <Formik
         initialValues={initialValues}
-        onSubmit={onSubmit} >
+        onSubmit={onSubmit}
+        validationSchema={validationSchema} >
         <Form id="checklistForm" className='bg-[#f3f5f5]'>
           <h1 className="text-3xl font-extrabold dark:text-gray-200 mb-2">CRANE 14 INSPECTION CHECKLIST (MONTHLY)</h1>
 
@@ -782,8 +787,10 @@ items-center text-center`}
               <td>
                 <div class="textbox-container">
                   <label for="crane14_inspected_by">Inspected by:</label>
+                  <ErrorMessage className='text-red-500' name="crane14_inspected_by" component="span" />
                   <Field type="text" id="crane14_inspected_by" 
                   name="crane14_inspected_by"
+                  value={authState.firstname}
              />
                 </div>
               </td>

@@ -1,19 +1,54 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useStateContext } from '../../contexts/ContextProvider';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field, ErrorMessage, useFormikContext } from 'formik';
 import * as Yup from 'yup';
 import "./DailyCIL.css"
 import axios from 'axios';
+
 
 
 function DailyCIL() {
 
   let navigate = useNavigate();
   const { currentColor, activeMenu, setActiveMenu } = useStateContext();
+  const [authState, setAuthState] = useState({
+    username: "",
+    id: 0,
+    firstname: "",
+    status: false,
+  });
 
-  const initialValues = {
-    Daily_CIL_inspected_by: "",
+  useEffect(() => {
+    axios
+      .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
+        headers: {
+          accessToken: localStorage.getItem("accessToken"),
+        },
+      })
+      .then((response) => {
+        if (response.data.error) {
+          setAuthState({ ...authState, status: false });
+        } else {
+          setAuthState({
+            username: response.data.username,
+            id: response.data.id,
+            firstname: response.data.firstname,
+            status: true,
+          });
+          // Set the initial values here after fetching data
+          setInitialValues(() => ({
+            Daily_CIL_inspected_by: response.data.firstname,
+          }));
+        }
+      });
+  }, []);
+  
+
+ 
+
+  const [initialValues, setInitialValues] = useState({
+    Daily_CIL_inspected_by: authState.firstname,
     Daily_CIL_approved_by: "",
     Daily_CIL_Crane_Number: "",
     Daily_CIL_date: "",
@@ -101,8 +136,11 @@ function DailyCIL() {
     Anti_Home_Conveyor_Floor_Action: "",
     Daily_CIL_Verified_by_MNC: "",
     DAILY_CIL_REMARKS: ""
-  };
+  });
 
+  const validationSchema = Yup.object().shape({
+    Daily_CIL_inspected_by: Yup.string().required("Please click field and press space.")
+});
 
   const onSubmit = (data) => {
     axios.post("https://maintaimdb-044f7fcd2d92.herokuapp.com/dailychecklist", data,
@@ -121,33 +159,9 @@ function DailyCIL() {
       });
   };
 
-  const [authState, setAuthState] = useState({
-    username: "",
-    id: 0,
-    firstname: "",
-    status: false,
-  });
 
-  useEffect(() => {
-    axios
-      .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
-        headers: {
-          accessToken: localStorage.getItem("accessToken"),
-        },
-      })
-      .then((response) => {
-        if (response.data.error) {
-          setAuthState({ ...authState, status: false });
-        } else {
-          setAuthState({
-            username: response.data.username,
-            id: response.data.id,
-            firstname: response.data.firstname,
-            status: true,
-          });
-        }
-      });
-  }, []);
+
+
 
 
 
@@ -155,7 +169,10 @@ function DailyCIL() {
     <div>
       <Formik
         initialValues={initialValues}
-        onSubmit={onSubmit}>
+        onSubmit={onSubmit}
+        validationSchema={validationSchema}
+        >
+
         <Form id="checklistForm" className='bg-[#f3f5f5]'>
           <h1 className='text-3xl font-extrabold dark:text-gray-200 mb-5'>Daily CIL</h1>
 
@@ -190,8 +207,10 @@ function DailyCIL() {
               <td>
                 <div class="textbox-container">
                   <label for="Daily_CIL_inspected_by">Inspected by:</label>
+                  <ErrorMessage className='text-red-500' name="Daily_CIL_inspected_by" component="span" />
                   <Field type="text" id="Daily_CIL_inspected_by" name="Daily_CIL_inspected_by"
-                   />
+                    value={authState.firstname}
+                  />
                 </div>
               </td>
               <td>
@@ -557,8 +576,8 @@ function DailyCIL() {
 
             <tbody><tr>
               <td colspan="2">
-                
-                <Field as="textarea" className='border-black border w-[100%]'  id="DAILY_CIL_REMARKS" name="DAILY_CIL_REMARKS" rows="6" cols="50"></Field>
+
+                <Field as="textarea" className='border-black border w-[100%]' id="DAILY_CIL_REMARKS" name="DAILY_CIL_REMARKS" rows="6" cols="50"></Field>
               </td>
             </tr>
               <tr>

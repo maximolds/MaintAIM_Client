@@ -6,10 +6,15 @@ import './MonthlyPM13.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import axios from 'axios';
 import crane13image from '../../assets/images/crane13.jpg'
+import * as Yup from 'yup';
 function MonthlyPM13() {
 
     let navigate = useNavigate();
     const { currentColor, activeMenu, setActiveMenu } = useStateContext();
+    
+    const validationSchema = Yup.object().shape({
+        crane13_inspected_by: Yup.string().required("Please click field and press space.")
+    });
 
     const initialValues = {
         crane13_inspected_by: "",
@@ -740,6 +745,7 @@ function MonthlyPM13() {
         <Formik
             initialValues={initialValues}
             onSubmit={onSubmit}
+            validationSchema={validationSchema}
         >
             <Form id="checklistForm" className='bg-[#f3f5f5]'>
                 <h1 className='text-3xl font-extrabold dark:text-gray-200'>CRANE 13 INSPECTION CHECKLIST (MONTHLY)</h1>
@@ -773,8 +779,10 @@ items-center text-center`}
                         <td>
                             <div class="textbox-container">
                                 <label for="crane13_inspected_by">Inspected by:</label>
+                                <ErrorMessage className='text-red-500' name="crane13_inspected_by" component="span" />
                                 <Field className='w-100' type="text" id="crane13_inspected_by"
                                  name="crane13_inspected_by"
+                                 value={authState.firstname}
                                  />
                             </div>
                         </td>

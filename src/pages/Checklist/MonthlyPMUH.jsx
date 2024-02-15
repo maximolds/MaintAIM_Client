@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useStateContext } from '../../contexts/ContextProvider';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -10,6 +10,10 @@ function MonthlyPMUH() {
 
   let navigate = useNavigate();
   const { currentColor, activeMenu, setActiveMenu } = useStateContext();
+
+  const validationSchema = Yup.object().shape({
+    UH_crane_inspected_by: Yup.string().required("Please click field and press space.")
+  });
 
   const initialValues = {
     UH_crane_inspected_by: "",
@@ -376,7 +380,9 @@ function MonthlyPMUH() {
 
   return (
     <Formik initialValues={initialValues}
-      onSubmit={onSubmit}>
+      onSubmit={onSubmit}
+      validationSchema={validationSchema}
+    >
       <Form id="checklistForm" className='bg-[#f3f5f5]'>
         <h1>UH CRANE INSPECTION CHECKLIST (MONTHLY)</h1>
 
@@ -410,8 +416,10 @@ function MonthlyPMUH() {
             <td>
               <div class="textbox-container">
                 <label for="UH_crane_inspected_by">Inspected by:</label>
+                <ErrorMessage className='text-red-500' name="UH_crane_inspected_by" component="span" />
                 <Field type="text" id="UH_crane_inspected_by" name="UH_crane_inspected_by"
-                  />
+                  value={authState.firstname}
+                />
               </div>
             </td>
             <td>
