@@ -48,6 +48,33 @@ const HistoryAddRecord = () => {
             });
     };
 
+    const [authState, setAuthState] = useState({
+        username: "",
+        id: 0,
+        firstname: "",
+        status: false,
+    });
+
+    useEffect(() => {
+        axios
+            .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
+                headers: {
+                    accessToken: localStorage.getItem("accessToken"),
+                },
+            })
+            .then((response) => {
+                if (response.data.error) {
+                    setAuthState({ ...authState, status: false });
+                } else {
+                    setAuthState({
+                        username: response.data.username,
+                        id: response.data.id,
+                        firstname: response.data.firstname,
+                        status: true,
+                    });
+                }
+            });
+    }, []);
 
 
 
@@ -109,7 +136,8 @@ const HistoryAddRecord = () => {
                                             type="text"
                                             placeholder='Juan Dela Cruz'
                                             className='rounded-3xl w-318 h-42 border-2 border-fade-blue  pl-4'
-                                        />
+                                            value={authState.firstname}
+                                       />
                                     </div>
                                     <div className='mt-5'>
                                         <p className='text-sm text-black dark:text-white mb-3 font-bold'>

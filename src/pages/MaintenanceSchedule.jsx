@@ -115,9 +115,7 @@ const MaintenanceSchedule = () => {
           ></iframe>
         </div>
 
-        <div>
-          <FullScheduler/>
-        </div>
+    
 
 
       </div>
