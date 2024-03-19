@@ -43,7 +43,7 @@ function QRScanner() {
         darkStyle={{
           color: 'white'
         }}
-        category='App'
+        
         title="Scan a QR Code!"
       />
 

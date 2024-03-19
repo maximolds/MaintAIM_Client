@@ -337,7 +337,7 @@ function MonthlyPMUH() {
     axios.post("https://maintaimdb-044f7fcd2d92.herokuapp.com/uhchecklist", data,
       {
         headers: {
-          accessToken: localStorage.getItem("accessToken"),
+          accessToken: sessionStorage.getItem("accessToken"),
         }
       }).then((response) => {
         if (response.data.error) {
@@ -361,7 +361,7 @@ function MonthlyPMUH() {
     axios
       .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
         headers: {
-          accessToken: localStorage.getItem("accessToken"),
+          accessToken: sessionStorage.getItem("accessToken"),
         },
       })
       .then((response) => {
@@ -384,7 +384,7 @@ function MonthlyPMUH() {
       validationSchema={validationSchema}
     >
       <Form id="checklistForm" className='bg-[#f3f5f5]'>
-        <h1>UH CRANE INSPECTION CHECKLIST (MONTHLY)</h1>
+        <h1 className='text-black font-bold text-[30px]'>UH CRANE INSPECTION CHECKLIST (MONTHLY)</h1>
 
         <div className='flex mt-2'>
           <button
@@ -472,7 +472,7 @@ function MonthlyPMUH() {
             <td>Motor</td>
             <td>Rotating sound</td>
             <td>Sound</td>
-            <td><Field type="text" name="Hoisting_Drive_Motor_sound_result" /></td>
+            <td><Field type="text" name="Crane_Control_Panel_Result"/></td>
             <td><Field type="text" name="Hoisting_Drive_Motor_sound_action" /></td>
             <td><Field type="text" name="Hoisting_Drive_Motor_sound_remarks" /></td>
           </tr>

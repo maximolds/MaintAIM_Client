@@ -37,7 +37,7 @@ function MonthlyPMULRead() {
         axios
           .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
             headers: {
-              accessToken: localStorage.getItem("accessToken"),
+              accessToken: sessionStorage.getItem("accessToken"),
             },
           })
           .then((response) => {

@@ -62,7 +62,7 @@ const Navbar = () => {
     axios
       .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
         headers: {
-          accessToken: localStorage.getItem("accessToken"),
+          accessToken: sessionStorage.getItem("accessToken"),
         },
       })
       .then((response) => {
@@ -81,7 +81,7 @@ const Navbar = () => {
   }, []);
 
   const logout = () => {
-    localStorage.removeItem("accessToken");
+    sessionStorage.removeItem("accessToken");
     setAuthState({ username: "", id: 0, status: false });
   };
 

@@ -81,7 +81,7 @@ const MaintenanceSchedule = () => {
         darkStyle={{
           color: 'white'
         }}
-        category='App'
+       
         title="Maintenance Schedule"
       />
       <div className='m-2 md:m-10 mt-2 p-2 md:p-10 bg-white

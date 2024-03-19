@@ -17,7 +17,7 @@ const Documentation = () => {
       darkStyle={{
         color: 'white'
       }}
-      category='App'
+      
       title="Documentation"
     />
     <div className='m-2 md:m-10 mt-2 p-2 md:p-10 bg-white

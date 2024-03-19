@@ -39,7 +39,7 @@ function LogoutConfirm({ visble, onClose }) {
         axios
           .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
             headers: {
-              accessToken: localStorage.getItem("accessToken"),
+              accessToken: sessionStorage.getItem("accessToken"),
             },
           })
           .then((response) => {
@@ -58,7 +58,7 @@ function LogoutConfirm({ visble, onClose }) {
       }, []);
 
     const logout = () => {
-        localStorage.removeItem("accessToken");
+        sessionStorage.removeItem("accessToken");
         setAuthState({ username: "", id: 0, firstname:"", role:"", status: false });
         navigate("/login");
       };

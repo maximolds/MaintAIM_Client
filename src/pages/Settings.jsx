@@ -30,7 +30,7 @@ const Settings = () => {
     axios
       .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
         headers: {
-          accessToken: localStorage.getItem("accessToken"),
+          accessToken: sessionStorage.getItem("accessToken"),
         },
       })
       .then((response) => {
@@ -63,7 +63,7 @@ const Settings = () => {
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
       <div className='justify-between flex'>
         <Header
-          category="Page"
+          
           title="User Manager"
         />
 

@@ -26,7 +26,7 @@ function FullScheduler() {
     axios.post("https://maintaimdb-044f7fcd2d92.herokuapp.com/fullcalendar", data,
       {
         headers: {
-          accessToken: localStorage.getItem("accessToken"),
+          accessToken: sessionStorage.getItem("accessToken"),
         }
       }).then((response) => {
         if (response.data.error) {

@@ -35,7 +35,7 @@ const HistoryAddRecord = () => {
         axios.post("https://maintaimdb-044f7fcd2d92.herokuapp.com/maintenancehistory", data,
             {
                 headers: {
-                    accessToken: localStorage.getItem("accessToken"),
+                    accessToken: sessionStorage.getItem("accessToken"),
                 }
             }).then((response) => {
                 if (response.data.error) {
@@ -59,7 +59,7 @@ const HistoryAddRecord = () => {
         axios
             .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
                 headers: {
-                    accessToken: localStorage.getItem("accessToken"),
+                    accessToken: sessionStorage.getItem("accessToken"),
                 },
             })
             .then((response) => {

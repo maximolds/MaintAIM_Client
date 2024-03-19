@@ -708,7 +708,7 @@ function MonthlyPM14() {
     axios.post("https://maintaimdb-044f7fcd2d92.herokuapp.com/crane14checklist", data,
       {
         headers: {
-          accessToken: localStorage.getItem("accessToken"),
+          accessToken: sessionStorage.getItem("accessToken"),
         }
       }).then((response) => {
         if (response.data.error) {
@@ -732,7 +732,7 @@ function MonthlyPM14() {
     axios
       .get("https://maintaimdb-044f7fcd2d92.herokuapp.com/auth/auth", {
         headers: {
-          accessToken: localStorage.getItem("accessToken"),
+          accessToken: sessionStorage.getItem("accessToken"),
         },
       })
       .then((response) => {

@@ -76,7 +76,7 @@ const MaintenanceHistoryRead = () => {
             </div>
             <div ref={componentPdf} style={{ width: '100%' }}>
                 <Header
-                    category="Page"
+                    
                     title="Maintenance History"
                 />
 
