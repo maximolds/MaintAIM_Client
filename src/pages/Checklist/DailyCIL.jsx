@@ -539,11 +539,11 @@ function DailyCIL() {
           <h2 className='mt-10 sm:mt-5 text-2xl font-extrabold dark:text-gray-200'>1F Conveyor</h2>
           <table>
             <tbody className="text-[10px] sm:text-base"><tr className="center-text text-[10px] sm:text-base">
-              <th>Parts for Inspection</th>
-              <th>Inspection Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
+              <th className='text-[10px] sm:text-base'>Parts for Inspection</th>
+              <th className='text-[10px] sm:text-base'>Inspection Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
             </tr>
               <tr className="center-text text-[10px] sm:text-base">
                 <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Frame</td>
@@ -720,11 +720,11 @@ function DailyCIL() {
           <h2 className='mt-10 sm:mt-5 text-2xl font-extrabold dark:text-gray-200'>2F Conveyor</h2>
           <table>
             <tbody className="text-[10px] sm:text-base"><tr className="center-text text-[10px] sm:text-base">
-              <th>Parts for Inspection</th>
-              <th>Inspection Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
+              <th className='text-[10px] sm:text-base'>Parts for Inspection</th>
+              <th className='text-[10px] sm:text-base'>Inspection Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
             </tr>
               <tr className="center-text text-[10px] sm:text-base">
                 <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Frame</td>
@@ -900,11 +900,11 @@ function DailyCIL() {
           <h2 className='mt-10 sm:mt-5 text-2xl font-extrabold dark:text-gray-200'>Anti-Home Conveyor</h2>
           <table>
             <tbody className="text-[10px] sm:text-base"><tr className="center-text text-[10px] sm:text-base">
-              <th>Parts for Inspection</th>
-              <th>Inspection Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
+              <th className='text-[10px] sm:text-base'>Parts for Inspection</th>
+              <th className='text-[10px] sm:text-base'>Inspection Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
             </tr>
               <tr className="center-text text-[10px] sm:text-base">
                 <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Frame</td>
