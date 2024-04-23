@@ -755,7 +755,7 @@ function MonthlyPM14() {
         initialValues={initialValues}
         onSubmit={onSubmit}
         validationSchema={validationSchema} >
-        <Form id="checklistForm" className='bg-[#f3f5f5]'>
+        <Form id="checklistForm" className='bg-[#f3f5f5] container mx-auto px-2 sm:px-4 lg:px-8'>
           <h1 className="text-3xl font-extrabold dark:text-gray-200 mb-2">CRANE 14 INSPECTION CHECKLIST (MONTHLY)</h1>
 
           <div className='flex mt-2'>
@@ -783,74 +783,74 @@ items-center text-center`}
 
 
           <table>
-            <tr>
-              <td>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>
                 <div class="textbox-container">
                   <label for="crane14_inspected_by">Inspected by:</label>
                   <ErrorMessage className='text-red-500' name="crane14_inspected_by" component="span" />
-                  <Field type="text" id="crane14_inspected_by"
+                  <Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" id="crane14_inspected_by"
                     name="crane14_inspected_by"
                     value={authState.firstname}
                   />
                 </div>
               </td>
-              <td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>
                 <div class="textbox-container">
                   <label for="crane14_approved_by">Approved by (Supervisor):</label>
-                  <Field type="text" id="crane14_approved_by" name="crane14_approved_by" />
+                  <Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" id="crane14_approved_by" name="crane14_approved_by" />
                 </div>
               </td>
             </tr>
-            <tr>
-              <td>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>
                 <div class="textbox-container">
                   <label for="crane14_no">Crane Number:</label>
-                  <Field type="text" id="crane14_no" name="crane14_no" />
+                  <Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" id="crane14_no" name="crane14_no" />
                 </div>
               </td>
-              <td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>
                 <div class="textbox-container">
                   <label for="crane14_date">Date:</label>
-                  <Field type="date" id="crane14_date" name="crane14_date" />
+                  <Field className="w-[80px] sm:w-full h-[35px] text-center" type="date" id="crane14_date" name="crane14_date" />
                 </div>
               </td>
-              <td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>
                 <div class="textbox-container">
                   <label for="crane14_time_start">Time Start:</label>
-                  <Field type="time" id="crane14_time_start" name="crane14_time_start" />
+                  <Field className="w-[80px] sm:w-full h-[35px] text-center" type="time" id="crane14_time_start" name="crane14_time_start" />
                 </div>
               </td>
-              <td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>
                 <div class="textbox-container">
                   <label for="crane14_time_end">Time End:</label>
-                  <Field type="time" id="crane14_time_end" name="crane14_time_end" />
+                  <Field className="w-[80px] sm:w-full h-[35px] text-center" type="time" id="crane14_time_end" name="crane14_time_end" />
                 </div>
               </td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Travel Drive Unit</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Travel motor</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Travel_Drive_Before_Travel_motor_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Travel motor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Travel_motor_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_Travel_motor_action">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Travel_motor_action">
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -860,20 +860,20 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field type="text" name="Travel_Drive_Before_Travel_motor_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_Before_Travel_motor_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Speed reducer</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Travel_Drive_Before_Speed_reducer_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Speed reducer</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Speed_reducer_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_Speed_reducer_damages_action">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Speed_reducer_damages_action">
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -883,20 +883,20 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field type="text" name="Travel_Drive_Before_Speed_reducer_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_Before_Speed_reducer_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Oil leakage</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Travel_Drive_Before_Speed_reducer_leakage_result">
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Oil leakage</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Speed_reducer_leakage_result">
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_Speed_reducer_leakage_action">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Speed_reducer_leakage_action">
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -906,20 +906,20 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field type="text" name="Travel_Drive_Before_Speed_reducer_leakage_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_Before_Speed_reducer_leakage_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Oil level</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Travel_Drive_Before_Speed_reducer_level_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Oil level</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Speed_reducer_level_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_Speed_reducer_level_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Speed_reducer_level_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -929,20 +929,20 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field type="text" name="Travel_Drive_Before_Speed_reducer_level_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_Before_Speed_reducer_level_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Electro-magnetic brake</td>
-              <td>Lining wear and tear</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Travel_Drive_Before_E-magnetic_brake_wear&tear_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Electro-magnetic brake</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lining wear and tear</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_E-magnetic_brake_wear&tear_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_E-magnetic_brake_wear&tear_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_E-magnetic_brake_wear&tear_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -952,20 +952,20 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field type="text" name="Travel_Drive_Before_E-magnetic_brake_wear&tear_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_Before_E-magnetic_brake_wear&tear_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Brake gap (0.30mm - 1.20mm)</td>
-              <td>Measure</td>
-              <td><Field as="select" name="Travel_Drive_Before_E-magnetic_brake_Brake_gap_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Brake gap (0.30mm - 1.20mm)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Measure</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_E-magnetic_brake_Brake_gap_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_E-magnetic_brake_Brake_gap_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_E-magnetic_brake_Brake_gap_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -975,22 +975,22 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field type="text" name="Travel_Drive_Before_E-magnetic_brake_Brake_gap_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_Before_E-magnetic_brake_Brake_gap_remarks" /></td>
             </tr>
 
-            <tr>
-              <td></td>
-              <td>Drive wheel</td>
-              <td>Abrasion or cracks</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Travel_Drive_Before_Drive_wheel_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Drive wheel</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or cracks</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Drive_wheel_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_Before_Drive_wheel_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Drive_wheel_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1001,22 +1001,22 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_Before_Drive_wheel_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_Before_Drive_wheel_remarks" /></td>
             </tr>
 
-            <tr>
-              <td></td>
-              <td>Free wheel</td>
-              <td>Abrasion or cracks</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Travel_Drive_Before_Free_wheel_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Free wheel</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or cracks</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Free_wheel_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_Before_Free_wheel_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Free_wheel_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1027,22 +1027,22 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_Before_Free_wheel_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_Before_Free_wheel_remarks" /></td>
             </tr>
 
-            <tr>
-              <td></td>
-              <td>Travel Encoder</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Travel_Drive_Before_Travel_encoder_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Travel Encoder</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Travel_encoder_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_Before_Travel_encoder_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_Before_Travel_encoder_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1053,21 +1053,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_Before_Travel_encoder_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_Before_Travel_encoder_remarks" /></td>
             </tr>
-            <tr>
-              <td>During</td>
-              <td>Travel motor</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Travel_Drive_During_Travel_motor_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Travel motor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_Travel_motor_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_Travel_motor_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_Travel_motor_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1078,21 +1078,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_During_Travel_motor_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_During_Travel_motor_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Speed reducer</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Travel_Drive_During_Speed_reducer_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Speed reducer</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_Speed_reducer_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_Speed_reducer_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_Speed_reducer_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1103,21 +1103,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_During_Speed_reducer_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_During_Speed_reducer_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Electro-magnetic brake</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Travel_Drive_During_E_magnetic_brake_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Electro-magnetic brake</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_E_magnetic_brake_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_E_magnetic_brake_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_E_magnetic_brake_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1128,21 +1128,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_During_E_magnetic_brake_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_During_E_magnetic_brake_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Travel wheel</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Travel_Drive_During_Travel_wheel_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Travel wheel</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_Travel_wheel_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_Travel_wheel_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_Travel_wheel_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1153,21 +1153,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_During_Travel_wheel_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_During_Travel_wheel_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Free wheel</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Travel_Drive_During_Free_wheel_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Free wheel</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_Free_wheel_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_Free_wheel_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_During_Free_wheel_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1178,21 +1178,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_During_Free_wheel_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_During_Free_wheel_remarks" /></td>
             </tr>
-            <tr>
-              <td>After</td>
-              <td>Travel Motor</td>
-              <td>Overheating</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Travel_Drive_After_Travel_motor_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Travel Motor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Overheating</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_After_Travel_motor_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_After_Travel_motor_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_After_Travel_motor_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1203,21 +1203,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_After_Travel_motor_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_After_Travel_motor_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Speed reducer</td>
-              <td>Overheating</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Travel_Drive_After_Speed_reducer_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Speed reducer</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Overheating</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_After_Speed_reducer_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_After_Speed_reducer_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_After_Speed_reducer_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1228,21 +1228,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_After_Speed_reducer_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_After_Speed_reducer_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Bolts / screws</td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Travel_Drive_After_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_After_Bolts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_After_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Travel_Drive_After_Bolts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1253,34 +1253,34 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Travel_Drive_After_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Travel_Drive_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Hoist Drive Unit</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Hoist motor</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_motor_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Hoist motor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_motor_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_motor_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_motor_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1291,21 +1291,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_motor_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_Hoisting_motor_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Speed reducer</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoist_Drive_Before_Speed_reducer_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Speed reducer</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Speed_reducer_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Speed_reducer_damages_remarks" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Speed_reducer_damages_remarks" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1316,21 +1316,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_Before_Speed_reducer_damages_action" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_Speed_reducer_damages_action" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Oil leakage</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoist_Drive_Before_Speed_reducer_leakage_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Oil leakage</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Speed_reducer_leakage_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Speed_reducer_leakage_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Speed_reducer_leakage_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1341,21 +1341,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_Before_Speed_reducer_leakage_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_Speed_reducer_leakage_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Oil level</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoist_Drive_Before_Speed_reducer_level_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Oil level</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Speed_reducer_level_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Speed_reducer_level_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Speed_reducer_level_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1366,21 +1366,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_Before_Speed_reducer_level_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_Speed_reducer_level_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Electro-magnetic brake</td>
-              <td>Lining wear and tear</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoist_Drive_Before_E_magnetic_brake_wear_tear_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Electro-magnetic brake</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lining wear and tear</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_E_magnetic_brake_wear_tear_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_E_magnetic_brake_wear_tear_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_E_magnetic_brake_wear_tear_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1391,21 +1391,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_Before_E_magnetic_brake_wear_tear_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_E_magnetic_brake_wear_tear_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Brake gap (0.60mm - 1.50mm)</td>
-              <td>Measure</td>
-              <td><Field as="select" name="Hoist_Drive_Before_E_magnetic_brake_Brake_gap_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Brake gap (0.60mm - 1.50mm)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Measure</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_E_magnetic_brake_Brake_gap_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_E_magnetic_brake_Brake_gap_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_E_magnetic_brake_Brake_gap_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1416,21 +1416,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_Before_E_magnetic_brake_Brake_gap_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_E_magnetic_brake_Brake_gap_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Hoisting chain</td>
-              <td>Abrasion, damage or rust</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_chain_Abrasion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Hoisting chain</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion, damage or rust</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_chain_Abrasion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_chain_Abrasion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_chain_Abrasion_action" >
 
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
@@ -1442,21 +1442,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_chain_Abrasion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_Hoisting_chain_Abrasion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Chain tension</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_chain_Chain_tension_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Chain tension</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_chain_Chain_tension_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_chain_Chain_tension_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_chain_Chain_tension_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1467,21 +1467,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_chain_Chain_tension_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_Hoisting_chain_Chain_tension_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Elongation</td>
-              <td>Measure</td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_chain_Elongation_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Elongation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Measure</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_chain_Elongation_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_chain_Elongation_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_chain_Elongation_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1492,198 +1492,22 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_chain_Elongation_remarks" /></td>
-            </tr>
-
-            <tr>
-              <td></td>
-              <td>Sprocket</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoist_Drive_Before_Sprocket_result" >
-                <option value="" disabled selected>Select option</option>
-                <option value="O">O</option>
-                <option value="∆">∆</option>
-                <option value="X">X</option>
-              </Field>
-              </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Sprocket_action" >
-                <option value="" disabled selected>Select option</option>
-                <option value="A">A</option>
-                <option value="C">C</option>
-                <option value="R">R</option>
-                <option value="M">M</option>
-                <option value="T">T</option>
-                <option value="O">O</option>
-                <option value="L">L</option>
-              </Field>
-              </td>
-              <td><Field type="text" name="Hoist_Drive_Before_Sprocket_remarks" /></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Hoisting encoder</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_encoder_result" >
-                <option value="" disabled selected>Select option</option>
-                <option value="O">O</option>
-                <option value="∆">∆</option>
-                <option value="X">X</option>
-              </Field>
-              </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_encoder_action" >
-                <option value="" disabled selected>Select option</option>
-                <option value="A">A</option>
-                <option value="C">C</option>
-                <option value="R">R</option>
-                <option value="M">M</option>
-                <option value="T">T</option>
-                <option value="O">O</option>
-                <option value="L">L</option>
-              </Field>
-              </td>
-              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_encoder_remarks" /></td>
-            </tr>
-            <tr>
-              <td>During</td>
-              <td>Hoisting motor</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Hoist_Drive_During_Hoisting_motor_result" >
-                <option value="" disabled selected>Select option</option>
-                <option value="O">O</option>
-                <option value="∆">∆</option>
-                <option value="X">X</option>
-              </Field>
-              </td>
-              <td><Field as="select" name="Hoist_Drive_During_Hoisting_motor_action" >
-                <option value="" disabled selected>Select option</option>
-                <option value="A">A</option>
-                <option value="C">C</option>
-                <option value="R">R</option>
-                <option value="M">M</option>
-                <option value="T">T</option>
-                <option value="O">O</option>
-                <option value="L">L</option>
-              </Field>
-              </td>
-              <td><Field type="text" name="Hoist_Drive_During_Hoisting_motor_remarks" /></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Speed reducer</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Hoist_Drive_During_Speed_reducer_result" >
-                <option value="" disabled selected>Select option</option>
-                <option value="O">O</option>
-                <option value="∆">∆</option>
-                <option value="X">X</option>
-              </Field>
-              </td>
-              <td><Field as="select" name="Hoist_Drive_During_Speed_reducer_action" >
-                <option value="" disabled selected>Select option</option>
-                <option value="A">A</option>
-                <option value="C">C</option>
-                <option value="R">R</option>
-                <option value="M">M</option>
-                <option value="T">T</option>
-                <option value="O">O</option>
-                <option value="L">L</option>
-              </Field>
-              </td>
-              <td><Field type="text" name="Hoist_Drive_During_Speed_reducer_remarks" /></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Electro-magnetic brake</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Hoist_Drive_During_E_magnetic_brake_result" >
-                <option value="" disabled selected>Select option</option>
-                <option value="O">O</option>
-                <option value="∆">∆</option>
-                <option value="X">X</option>
-              </Field>
-              </td>
-              <td><Field as="select" name="Hoist_Drive_During_E_magneticmagnetic_brake_action" >
-                <option value="" disabled selected>Select option</option>
-                <option value="A">A</option>
-                <option value="C">C</option>
-                <option value="R">R</option>
-                <option value="M">M</option>
-                <option value="T">T</option>
-                <option value="O">O</option>
-                <option value="L">L</option>
-              </Field>
-              </td>
-              <td><Field type="text" name="Hoist_Drive_During_E_magneticmagnetic_brake_remarks" /></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Sprocket</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Hoist_Drive_During_Sprocket_sound_result" >
-                <option value="" disabled selected>Select option</option>
-                <option value="O">O</option>
-                <option value="∆">∆</option>
-                <option value="X">X</option>
-              </Field>
-              </td>
-              <td><Field as="select" name="Hoist_Drive_During_Sprocket_sound_action" >
-                <option value="" disabled selected>Select option</option>
-                <option value="A">A</option>
-                <option value="C">C</option>
-                <option value="R">R</option>
-                <option value="M">M</option>
-                <option value="T">T</option>
-                <option value="O">O</option>
-                <option value="L">L</option>
-              </Field>
-              </td>
-              <td><Field type="text" name="Hoist_Drive_During_Sprocket_sound_remarks" /></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Lateral vibrations</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Hoist_Drive_During_Sprocket_vibrations_result" >
-                <option value="" disabled selected>Select option</option>
-                <option value="O">O</option>
-                <option value="∆">∆</option>
-                <option value="X">X</option>
-              </Field>
-              </td>
-              <td><Field as="select" name="Hoist_Drive_During_Sprocket_vibrations_action" >
-                <option value="" disabled selected>Select option</option>
-                <option value="A">A</option>
-                <option value="C">C</option>
-                <option value="R">R</option>
-                <option value="M">M</option>
-                <option value="T">T</option>
-                <option value="O">O</option>
-                <option value="L">L</option>
-              </Field>
-              </td>
-              <td><Field type="text" name="Hoist_Drive_During_Sprocket_vibrations_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_Hoisting_chain_Elongation_remarks" /></td>
             </tr>
 
-            <tr>
-              <td>After</td>
-              <td>Hoisting motor</td>
-              <td>Overheating</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Hoist_Drive_After_Hoisting_motor_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sprocket</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Sprocket_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_After_Hoisting_motor_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Sprocket_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1694,21 +1518,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_After_Hoisting_motor_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_Sprocket_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Speed reducer</td>
-              <td>Overheating</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Hoist_Drive_After_Speed_reducer_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Hoisting encoder</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_encoder_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_After_Speed_reducer_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_Before_Hoisting_encoder_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1719,21 +1543,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_After_Speed_reducer_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_Before_Hoisting_encoder_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Bolts / screws</td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Hoist_Drive_After_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Hoisting motor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_Hoisting_motor_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_After_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_Hoisting_motor_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1744,34 +1568,210 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoist_Drive_After_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_During_Hoisting_motor_remarks" /></td>
+            </tr>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Speed reducer</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_Speed_reducer_result" >
+                <option value="" disabled selected>Select option</option>
+                <option value="O">O</option>
+                <option value="∆">∆</option>
+                <option value="X">X</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_Speed_reducer_action" >
+                <option value="" disabled selected>Select option</option>
+                <option value="A">A</option>
+                <option value="C">C</option>
+                <option value="R">R</option>
+                <option value="M">M</option>
+                <option value="T">T</option>
+                <option value="O">O</option>
+                <option value="L">L</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_During_Speed_reducer_remarks" /></td>
+            </tr>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Electro-magnetic brake</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_E_magnetic_brake_result" >
+                <option value="" disabled selected>Select option</option>
+                <option value="O">O</option>
+                <option value="∆">∆</option>
+                <option value="X">X</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_E_magneticmagnetic_brake_action" >
+                <option value="" disabled selected>Select option</option>
+                <option value="A">A</option>
+                <option value="C">C</option>
+                <option value="R">R</option>
+                <option value="M">M</option>
+                <option value="T">T</option>
+                <option value="O">O</option>
+                <option value="L">L</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_During_E_magneticmagnetic_brake_remarks" /></td>
+            </tr>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sprocket</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_Sprocket_sound_result" >
+                <option value="" disabled selected>Select option</option>
+                <option value="O">O</option>
+                <option value="∆">∆</option>
+                <option value="X">X</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_Sprocket_sound_action" >
+                <option value="" disabled selected>Select option</option>
+                <option value="A">A</option>
+                <option value="C">C</option>
+                <option value="R">R</option>
+                <option value="M">M</option>
+                <option value="T">T</option>
+                <option value="O">O</option>
+                <option value="L">L</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_During_Sprocket_sound_remarks" /></td>
+            </tr>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lateral vibrations</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_Sprocket_vibrations_result" >
+                <option value="" disabled selected>Select option</option>
+                <option value="O">O</option>
+                <option value="∆">∆</option>
+                <option value="X">X</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_During_Sprocket_vibrations_action" >
+                <option value="" disabled selected>Select option</option>
+                <option value="A">A</option>
+                <option value="C">C</option>
+                <option value="R">R</option>
+                <option value="M">M</option>
+                <option value="T">T</option>
+                <option value="O">O</option>
+                <option value="L">L</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_During_Sprocket_vibrations_remarks" /></td>
+            </tr>
+
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Hoisting motor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Overheating</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_After_Hoisting_motor_result" >
+                <option value="" disabled selected>Select option</option>
+                <option value="O">O</option>
+                <option value="∆">∆</option>
+                <option value="X">X</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_After_Hoisting_motor_action" >
+                <option value="" disabled selected>Select option</option>
+                <option value="A">A</option>
+                <option value="C">C</option>
+                <option value="R">R</option>
+                <option value="M">M</option>
+                <option value="T">T</option>
+                <option value="O">O</option>
+                <option value="L">L</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_After_Hoisting_motor_remarks" /></td>
+            </tr>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Speed reducer</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Overheating</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_After_Speed_reducer_result" >
+                <option value="" disabled selected>Select option</option>
+                <option value="O">O</option>
+                <option value="∆">∆</option>
+                <option value="X">X</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_After_Speed_reducer_action" >
+                <option value="" disabled selected>Select option</option>
+                <option value="A">A</option>
+                <option value="C">C</option>
+                <option value="R">R</option>
+                <option value="M">M</option>
+                <option value="T">T</option>
+                <option value="O">O</option>
+                <option value="L">L</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_After_Speed_reducer_remarks" /></td>
+            </tr>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_After_Bolts_result" >
+                <option value="" disabled selected>Select option</option>
+                <option value="O">O</option>
+                <option value="∆">∆</option>
+                <option value="X">X</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoist_Drive_After_Bolts_action" >
+                <option value="" disabled selected>Select option</option>
+                <option value="A">A</option>
+                <option value="C">C</option>
+                <option value="R">R</option>
+                <option value="M">M</option>
+                <option value="T">T</option>
+                <option value="O">O</option>
+                <option value="L">L</option>
+              </Field>
+              </td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoist_Drive_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Hoisting Carriage</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Carriage frame</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Carriage_frame_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Carriage frame</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Carriage_frame_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Carriage_frame_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Carriage_frame_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1782,21 +1782,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_Carriage_frame_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_Carriage_frame_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Hoisting guide rollers</td>
-              <td>Abrasion or deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_guide_rollers_abrasion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Hoisting guide rollers</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_guide_rollers_abrasion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_guide_rollers_abrasion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_guide_rollers_abrasion_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1807,21 +1807,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_guide_rollers_abrasion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_guide_rollers_abrasion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Clearance to mast</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_guide_rollers_mast_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Clearance to mast</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_guide_rollers_mast_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_guide_rollers_mast_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_guide_rollers_mast_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1832,21 +1832,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_guide_rollers_mast_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_guide_rollers_mast_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Diameter (over 149mm)</td>
-              <td>Measure</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_guide_rollers_Diameter_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Diameter (over 149mm)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Measure</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_guide_rollers_Diameter_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_guide_rollers_Diameter_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_guide_rollers_Diameter_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1857,21 +1857,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_guide_rollers_Diameter_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_guide_rollers_Diameter_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Hoisting face rollers</td>
-              <td>Abrasion or deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_face_rollers_abrasion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Hoisting face rollers</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_face_rollers_abrasion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_face_rollers_abrasion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_face_rollers_abrasion_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1882,21 +1882,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_face_rollers_abrasion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_face_rollers_abrasion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Diameter (over 85mm)</td>
-              <td>Measure</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_face_rollers_Diameter_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Diameter (over 85mm)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Measure</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_face_rollers_Diameter_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_face_rollers_Diameter_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_face_rollers_Diameter_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1907,21 +1907,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_face_rollers_Diameter_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_face_rollers_Diameter_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Load profile detector arm</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Load_profile_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Load profile detector arm</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Load_profile_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Load_profile_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Load_profile_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1932,21 +1932,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_Load_profile_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_Load_profile_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Spring condition</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Load_profile_Spring_condition_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Spring condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Load_profile_Spring_condition_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Load_profile_Spring_condition_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Load_profile_Spring_condition_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1957,21 +1957,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_Load_profile_Spring_condition_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_Load_profile_Spring_condition_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Bay count shielding plates</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Bay_count_shielding_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bay count shielding plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Bay_count_shielding_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Bay_count_shielding_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Bay_count_shielding_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -1982,21 +1982,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_Bay_count_shielding_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_Bay_count_shielding_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Home position shielding plates</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Home_position_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Home position shielding plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Home_position_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Home_position_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Home_position_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2007,21 +2007,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_Home_position_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_Home_position_remarks" /></td>
             </tr>
-            <tr>
-              <td>Bef.</td>
-              <td>Deceleration shielding plates</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Deceleration_shielding_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bef.</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deceleration shielding plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Deceleration_shielding_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Deceleration_shielding_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Deceleration_shielding_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2032,21 +2032,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_Deceleration_shielding_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_Deceleration_shielding_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Over-run flag</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Over_run_flag_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Over-run flag</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Over_run_flag_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Over_run_flag_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Over_run_flag_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2057,21 +2057,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_Over_run_flag_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_Over_run_flag_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Position</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Over_run_flag_Position_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Position</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Over_run_flag_Position_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Over_run_flag_Position_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_Before_Over_run_flag_Position_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2082,21 +2082,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_Before_Over_run_flag_Position_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_Before_Over_run_flag_Position_remarks" /></td>
             </tr>
-            <tr>
-              <td>During</td>
-              <td>Hoisting guide rollers</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Hoisting_Carriage_During_guide_rollers_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Hoisting guide rollers</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_During_guide_rollers_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_During_guide_rollers_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_During_guide_rollers_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2107,21 +2107,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_During_guide_rollers_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_During_guide_rollers_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Hoisting face rollers</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Hoisting_Carriage_During_face_rollers_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Hoisting face rollers</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_During_face_rollers_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_During_face_rollers_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_During_face_rollers_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2132,21 +2132,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_During_face_rollers_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_During_face_rollers_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Shielding plates</td>
-              <td>Smooth traveling at section</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Hoisting_Carriage_During_Shielding_plates_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Shielding plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Smooth traveling at section</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_During_Shielding_plates_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_During_Shielding_plates_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_During_Shielding_plates_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2157,21 +2157,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_During_Shielding_plates_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_During_Shielding_plates_remarks" /></td>
             </tr>
-            <tr>
-              <td>After</td>
-              <td>Bolts / screws</td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Hoisting_Carriage_After_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_After_Bolts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_After_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Hoisting_Carriage_After_Bolts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2182,34 +2182,34 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Hoisting_Carriage_After_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Hoisting_Carriage_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Top & Bottom Rails</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Top rail</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Top_rail_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Top rail</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Top_rail_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Top_rail_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Top_rail_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2220,21 +2220,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Top_rail_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Top_rail_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Rail joint condition</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Top_rail_Rail_joint_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Rail joint condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Top_rail_Rail_joint_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Top_rail_Rail_joint_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Top_rail_Rail_joint_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2245,21 +2245,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Top_rail_Rail_joint_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Top_rail_Rail_joint_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Bolts and nuts</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Top_rail_Bolts_and_nuts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts and nuts</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Top_rail_Bolts_and_nuts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Top_rail_Bolts_and_nuts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Top_rail_Bolts_and_nuts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2270,21 +2270,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Top_rail_Bolts_and_nuts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Top_rail_Bolts_and_nuts_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Bottom rail</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bottom_rail_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bottom rail</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Bottom_rail_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bottom_rail_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Bottom_rail_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2295,21 +2295,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Bottom_rail_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Bottom_rail_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Rail joint condition</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bottom_rail_Rail_joint_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Rail joint condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Bottom_rail_Rail_joint_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bottom_rail_Rail_joint_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Bottom_rail_Rail_joint_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2320,21 +2320,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Bottom_rail_Rail_joint_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Bottom_rail_Rail_joint_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Shim plates</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Shim_plates_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Shim plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Shim_plates_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Shim_plates_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Shim_plates_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2345,21 +2345,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Shim_plates_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Shim_plates_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Missing</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Shim_plates_Missing_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Missing</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Shim_plates_Missing_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Shim_plates_Missing_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Shim_plates_Missing_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2370,21 +2370,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Shim_plates_Missing_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Shim_plates_Missing_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Anchor bolts</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Anchor_bolt_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Anchor bolts</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Anchor_bolt_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Anchor_bolt_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Anchor_bolt_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2395,21 +2395,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Anchor_bolt_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Anchor_bolt_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Shielding plates</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Shielding_plates_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Shielding plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Shielding_plates_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Shielding_plates_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Shielding_plates_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2420,21 +2420,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Shielding_plates_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Shielding_plates_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Bay count shielding plates</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bay_count_shielding_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bay count shielding plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Bay_count_shielding_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bay_count_shielding_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Bay_count_shielding_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2445,14 +2445,14 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Bay_count_shielding_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Bay_count_shielding_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Home position shielding plates</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bay_count_shielding_remarks" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Home position shielding plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Bay_count_shielding_remarks" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2463,7 +2463,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Home_position_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Home_position_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2474,21 +2474,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Home_position_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Home_position_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Deceleration shielding plates</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Deceleration_shielding_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deceleration shielding plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Deceleration_shielding_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Deceleration_shielding_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Deceleration_shielding_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2499,21 +2499,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Deceleration_shielding_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Deceleration_shielding_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Over-run flag</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Over_run_flag_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Over-run flag</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Over_run_flag_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Over_run_flag_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Over_run_flag_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2524,21 +2524,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Over_run_flag_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Over_run_flag_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Position</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Over_run_flag_Position_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Position</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Over_run_flag_Position_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Over_run_flag_Position_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_Before_Over_run_flag_Position_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2549,21 +2549,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_Before_Over_run_flag_Position_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_Before_Over_run_flag_Position_remarks" /></td>
             </tr>
-            <tr>
-              <td>During</td>
-              <td>Top rail</td>
-              <td>Smooth traveling at section</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_During_Top_rail_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Top rail</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Smooth traveling at section</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_During_Top_rail_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_During_Top_rail_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_During_Top_rail_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2574,21 +2574,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_During_Top_rail_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_During_Top_rail_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Bottom Rail</td>
-              <td>Smooth traveling at section</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_During_Bottom_rail_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bottom Rail</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Smooth traveling at section</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_During_Bottom_rail_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_During_Bottom_rail_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_During_Bottom_rail_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2599,21 +2599,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_During_Bottom_rail_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_During_Bottom_rail_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Shielding plates</td>
-              <td>Smooth traveling at section</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Top_Bottom_Rails_During_Shielding_plates_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Shielding plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Smooth traveling at section</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_During_Shielding_plates_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_During_Shielding_plates_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_During_Shielding_plates_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2624,21 +2624,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_During_Shielding_plates_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_During_Shielding_plates_remarks" /></td>
             </tr>
-            <tr>
-              <td>After</td>
-              <td>Bolts / screws</td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Top_Bottom_Rails_After_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_After_Bolts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_After_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Top_Bottom_Rails_After_Bolts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2649,34 +2649,34 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Top_Bottom_Rails_After_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Top_Bottom_Rails_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Upper & Lower Frames</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Upper frame</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Upper_frame_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Upper frame</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Upper_frame_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Upper_frame_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Upper_frame_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2687,21 +2687,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_Before_Upper_frame_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_Before_Upper_frame_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Sprocket (Upper frame)</td>
-              <td>Abrasion or deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Sprocket_Abrasion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sprocket (Upper frame)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Sprocket_Abrasion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Sprocket_Abrasion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Sprocket_Abrasion_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2712,21 +2712,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_Before_Sprocket_Abrasion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_Before_Sprocket_Abrasion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Upper travel guide roller</td>
-              <td>Abrasion or deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Upper_travel_guide_Abrasion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Upper travel guide roller</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Upper_travel_guide_Abrasion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lowerr_Frames_Before_Upper_travel_guide_Abrasion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lowerr_Frames_Before_Upper_travel_guide_Abrasion_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2737,21 +2737,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_Before_Upper_travel_guide_Abrasion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_Before_Upper_travel_guide_Abrasion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Diameter (over 95mm)</td>
-              <td>Measure</td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Upper_travel_guide_Diameter_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Diameter (over 95mm)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Measure</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Upper_travel_guide_Diameter_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Upper_travel_guide_Diameter_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Upper_travel_guide_Diameter_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2762,21 +2762,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_Before_Upper_travel_guide_Diameter_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_Before_Upper_travel_guide_Diameter_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Lower frame</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Lower_frame_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lower frame</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Lower_frame_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Lower_frame_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Lower_frame_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2787,21 +2787,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_Before_Lower_frame_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_Before_Lower_frame_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Sprocket (Lower frame)</td>
-              <td>Abrasion or deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Sprocket_deformation_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sprocket (Lower frame)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Sprocket_deformation_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Sprocket_deformation_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Sprocket_deformation_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2812,21 +2812,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_Before_Sprocket_deformation_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_Before_Sprocket_deformation_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Lower travel guide roller</td>
-              <td>Abrasion or deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Abrasion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lower travel guide roller</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Abrasion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Abrasion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Abrasion_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2837,21 +2837,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_Before_Lower_travel_guide_Abrasion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_Before_Lower_travel_guide_Abrasion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Diameter (over 159mm)</td>
-              <td>Measure</td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Diameter_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Diameter (over 159mm)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Measure</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Diameter_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Diameter_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Diameter_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2861,14 +2861,14 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field type="text" name="Upper_Lower_Frames_Before_Lower_travel_guide_Diameter_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_Before_Lower_travel_guide_Diameter_remarks" /></td>
             </tr>
-            <tr>
-              <td>During</td>
-              <td>Upper travel guide roller</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Upper_travel_guide_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Upper travel guide roller</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_During_Upper_travel_guide_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
@@ -2876,7 +2876,7 @@ items-center text-center`}
               </Field>
 
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Upper_travel_guide_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_During_Upper_travel_guide_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2887,21 +2887,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_During_Upper_travel_guide_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_During_Upper_travel_guide_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Lower travel guide roller</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Lower_travel_guide_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lower travel guide roller</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_During_Lower_travel_guide_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Lower_travel_guide_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_During_Lower_travel_guide_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2912,21 +2912,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_During_Lower_travel_guide_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_During_Lower_travel_guide_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Sprocket</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Sprocket_sound_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sprocket</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_During_Sprocket_sound_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Sprocket_sound_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_During_Sprocket_sound_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2937,21 +2937,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_During_Sprocket_sound_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_During_Sprocket_sound_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Lateral vibrations</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Sprocket_vibrations_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lateral vibrations</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_During_Sprocket_vibrations_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Sprocket_vibrations_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_During_Sprocket_vibrations_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2962,21 +2962,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_During_Sprocket_vibrations_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_During_Sprocket_vibrations_remarks" /></td>
             </tr>
-            <tr>
-              <td>After</td>
-              <td>Bolts / screws</td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Upper_Lower_Frames_After_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_After_Bolts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_After_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Upper_Lower_Frames_After_Bolts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -2987,34 +2987,34 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Upper_Lower_Frames_After_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Upper_Lower_Frames_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Slide Fork Unit</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Fork body frame</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Fork_Before_body_frame_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fork body frame</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Fork_Before_body_frame_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Fork_Before_body_frame_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Fork_Before_body_frame_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3025,21 +3025,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Fork_Before_body_frame_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Fork_Before_body_frame_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Fork motor</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Fork_motor_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fork motor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Fork_motor_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Fork_motor_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Fork_motor_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3050,21 +3050,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Fork_motor_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Fork_motor_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Speed reducer</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Deformation_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Speed reducer</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Deformation_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Deformation_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Deformation_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3075,21 +3075,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Speed_reducer_Deformation_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Speed_reducer_Deformation_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Grease amount</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Grease_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Grease amount</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Grease_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Grease_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Grease_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3100,21 +3100,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Speed_reducer_Grease_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Speed_reducer_Grease_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Electro-magnetic brake</td>
-              <td>Lining wear and tear</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_wear_tear_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Electro-magnetic brake</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lining wear and tear</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_wear_tear_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_wear_tear_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_wear_tear_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3125,20 +3125,20 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_E_magnetic_brake_wear_tear_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_E_magnetic_brake_wear_tear_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Brake gap (0.20mm - 0.50mm)</td>
-              <td>Measure</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_Brake_gap_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Brake gap (0.20mm - 0.50mm)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Measure</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_Brake_gap_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field></td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_Brake_gap_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_Brake_gap_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3149,21 +3149,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_E_magnetic_brake_Brake_gap_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_E_magnetic_brake_Brake_gap_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Rack and pinion</td>
-              <td>Abrasion or deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Abrasion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Rack and pinion</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Abrasion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Abrasion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Abrasion_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3174,21 +3174,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Rack_and_pinion_Abrasion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Rack_and_pinion_Abrasion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Lubrication</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Lubrication_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lubrication</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Lubrication_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Lubrication_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Lubrication_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3198,21 +3198,21 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Rack_and_pinion_Lubrication_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Rack_and_pinion_Lubrication_remarks" /></td>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Middle rail</td>
-              <td>Abrasion or deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Middle_rail_Abrasion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Middle rail</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Middle_rail_Abrasion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Middle_rail_Abrasion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Middle_rail_Abrasion_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3223,21 +3223,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Middle_rail_Abrasion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Middle_rail_Abrasion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Groove condition</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Middle_rail_Groove_condition_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Groove condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Middle_rail_Groove_condition_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Middle_rail_Groove_condition_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Middle_rail_Groove_condition_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3248,21 +3248,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Middle_rail_Groove_condition_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Middle_rail_Groove_condition_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Lubrication</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Middle_rail_Lubrication_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lubrication</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Middle_rail_Lubrication_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Middle_rail_Lubrication_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Middle_rail_Lubrication_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3273,21 +3273,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Middle_rail_Lubrication_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Middle_rail_Lubrication_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Cam followers</td>
-              <td>Abrasion and deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Cam_followers_Abrasion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Cam followers</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion and deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Cam_followers_Abrasion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Cam_followers_Abrasion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Cam_followers_Abrasion_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3298,21 +3298,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Cam_followers_Abrasion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Cam_followers_Abrasion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Lubrication</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Cam_followers_Lubrication_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lubrication</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Cam_followers_Lubrication_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Cam_followers_Lubrication_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Cam_followers_Lubrication_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3323,21 +3323,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Cam_followers_Lubrication_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Cam_followers_Lubrication_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Smooth rotation</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Cam_followers_Smooth_rotation_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Smooth rotation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Cam_followers_Smooth_rotation_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Cam_followers_Smooth_rotation_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Cam_followers_Smooth_rotation_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3348,21 +3348,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Cam_followers_Smooth_rotation_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Cam_followers_Smooth_rotation_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Torque limiter</td>
-              <td>Lock nut tighteness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Lock_nut_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Torque limiter</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lock nut tighteness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Lock_nut_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Lock_nut_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Lock_nut_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3373,21 +3373,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Torque_limiter_Lock_nut_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Torque_limiter_Lock_nut_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Mechanical operation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Mechanical_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Mechanical operation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Mechanical_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Mechanical_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Mechanical_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3398,21 +3398,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Torque_limiter_Mechanical_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Torque_limiter_Mechanical_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Sprocket / idler rollers</td>
-              <td>Abrasion or deformation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Sprocket_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sprocket / idler rollers</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abrasion or deformation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Sprocket_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Sprocket_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Sprocket_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3423,21 +3423,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Sprocket_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Sprocket_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Sensing plates</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Deformation_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sensing plates</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Deformation_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Deformation_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Deformation_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3448,21 +3448,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Sensing_plates_Deformation_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Sensing_plates_Deformation_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Looseness_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Looseness_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Looseness_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Looseness_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3473,21 +3473,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_Before_Sensing_plates_Looseness_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_Before_Sensing_plates_Looseness_remarks" /></td>
             </tr>
-            <tr>
-              <td>During</td>
-              <td>Fork motor</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Fork_motor_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fork motor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Fork_motor_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Fork_motor_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Fork_motor_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3498,21 +3498,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_During_Fork_motor_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_During_Fork_motor_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Speed reducer</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Speed_reducer_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Speed reducer</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Speed_reducer_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Speed_reducer_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Speed_reducer_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3523,21 +3523,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_During_Speed_reducer_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_During_Speed_reducer_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Electro-magnetic brake</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_E_magnetic_brake_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Electro-magnetic brake</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_E_magnetic_brake_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_E_magnetic_brake_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_E_magnetic_brake_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3548,21 +3548,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_During_E_magnetic_brake_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_During_E_magnetic_brake_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Fork plate</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Fork_plate_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fork plate</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Fork_plate_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Fork_plate_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Fork_plate_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3573,21 +3573,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_During_Fork_plate_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_During_Fork_plate_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Rack and pinion</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_sound_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Rack and pinion</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_sound_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_sound_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_sound_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3598,21 +3598,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_During_Rack_and_pinion_sound_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_During_Rack_and_pinion_sound_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Lateral vibrations</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_vibrations_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lateral vibrations</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_vibrations_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_vibrations_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_vibrations_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3623,21 +3623,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_During_Rack_and_pinion_vibrations_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_During_Rack_and_pinion_vibrations_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Sprocket / idler rollers</td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Sprocket_sound_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sprocket / idler rollers</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Sprocket_sound_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Sprocket_sound_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Sprocket_sound_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3648,21 +3648,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_During_Sprocket_sound_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_During_Sprocket_sound_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Lateral vibrations</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Sprocket_vibrations_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Lateral vibrations</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Sprocket_vibrations_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Sprocket_vibrations_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_During_Sprocket_vibrations_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3673,21 +3673,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_During_Sprocket_vibrations_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_During_Sprocket_vibrations_remarks" /></td>
             </tr>
-            <tr>
-              <td>After</td>
-              <td>Fork motor</td>
-              <td>Overheating</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_Fork_motor_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fork motor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Overheating</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_After_Fork_motor_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_Fork_motor_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_After_Fork_motor_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3698,21 +3698,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_After_Fork_motor_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_After_Fork_motor_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Speed reducer</td>
-              <td>Overheating</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_Speed_reducer_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Speed reducer</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Overheating</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_After_Speed_reducer_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_Speed_reducer_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_After_Speed_reducer_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3723,21 +3723,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_After_Speed_reducer_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_After_Speed_reducer_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Electro-magnetic brake</td>
-              <td>Overheating</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_E_magnetic_brake_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Electro-magnetic brake</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Overheating</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_After_E_magnetic_brake_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_E_magnetic_brake_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_After_E_magnetic_brake_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3748,21 +3748,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_After_E_magnetic_brake_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_After_E_magnetic_brake_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Bolts / screws</td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_After_Bolts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Slide_Fork_Unit_After_Bolts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3773,34 +3773,34 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Slide_Fork_Unit_After_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Slide_Fork_Unit_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Power Feed Unit</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Power feed rail</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_power_feed_rail_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Power feed rail</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_power_feed_rail_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_power_feed_rail_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_power_feed_rail_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3811,21 +3811,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_Before_power_feed_rail_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_Before_power_feed_rail_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Fastener condition</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_power_feed_rail_Fastener_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fastener condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_power_feed_rail_Fastener_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_power_feed_rail_Fastener_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_power_feed_rail_Fastener_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3836,21 +3836,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_Before_power_feed_rail_Fastener_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_Before_power_feed_rail_Fastener_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_power_feed_rail_Dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_power_feed_rail_Dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_power_feed_rail_Dust_result" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_power_feed_rail_Dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3861,21 +3861,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_Before_power_feed_rail_Dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_Before_power_feed_rail_Dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Collector arm</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_arm_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Collector arm</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_arm_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_arm_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_arm_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3886,21 +3886,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_arm_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_Before_Collector_arm_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Spring condition</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_arm_Spring_condition_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Spring condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_arm_Spring_condition_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_arm_Spring_condition_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_arm_Spring_condition_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3911,21 +3911,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_arm_Spring_condition_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_Before_Collector_arm_Spring_condition_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Collector shoes</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_shoes_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Collector shoes</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_shoes_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_shoes_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_shoes_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3936,21 +3936,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_shoes_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_Before_Collector_shoes_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Fastener condition</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_shoes_Fastener_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fastener condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_shoes_Fastener_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_shoes_Fastener_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_shoes_Fastener_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3961,21 +3961,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_shoes_Fastener_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_Before_Collector_shoes_Fastener_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_shoes_Dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_shoes_Dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_shoes_Dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_Before_Collector_shoes_Dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -3986,21 +3986,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_shoes_Dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_Before_Collector_shoes_Dust_remarks" /></td>
             </tr>
-            <tr>
-              <td>During</td>
-              <td>Joiner</td>
-              <td>Smooth traveling at section</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_During_Joiner_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Joiner</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Smooth traveling at section</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_During_Joiner_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_During_Joiner_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_During_Joiner_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4011,21 +4011,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_During_Joiner_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_During_Joiner_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Feed in</td>
-              <td>Smooth traveling at section</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_During_Feed_in_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Feed in</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Smooth traveling at section</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_During_Feed_in_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_During_Feed_in_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_During_Feed_in_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4036,21 +4036,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_During_Feed_in_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_During_Feed_in_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Current collector</td>
-              <td>Smooth traveling at section</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Power_Feed_Unit_During_Current_collector_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Current collector</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Smooth traveling at section</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_During_Current_collector_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_During_Current_collector_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_During_Current_collector_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4061,21 +4061,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_During_Current_collector_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_During_Current_collector_remarks" /></td>
             </tr>
-            <tr>
-              <td>After</td>
-              <td>Bolts / screws</td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Power_Feed_Unit_After_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_After_Bolts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_After_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Power_Feed_Unit_After_Bolts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4086,34 +4086,34 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Power_Feed_Unit_After_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Power_Feed_Unit_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Traveling Detectors & I/O Checks</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Home position detector</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Traveling_Detectors_Before_Home_position_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Home position detector</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Home_position_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Traveling_Detectors_Before_Home_position_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Home_position_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4124,21 +4124,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Traveling_Detectors_Before_Home_position_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Home_position_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Traveling_Detectors_Before_Home_position_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Home_position_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Traveling_Detectors_Before_Home_position_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Home_position_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4149,22 +4149,22 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Traveling_Detectors_Before_Home_position_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Home_position_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Regular position detector
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Regular position detector
                 (Front & rear)</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Traveling_Detectors_Before_Regular_position_damages_result" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Regular_position_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Traveling_Detectors_Before_Regular_position_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Regular_position_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4175,20 +4175,20 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Traveling_Detectors_Before_Regular_position_damages_remarks" /></td>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>LED indicator</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Regular_position_LED_result" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Regular_position_damages_remarks" /></td>
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Regular_position_LED_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Regular_position_LED_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Regular_position_LED_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4199,21 +4199,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_Before_Regular_position_LED_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Regular_position_LED_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td>Forward Deceleration 1</td>
-                <td>Deformation or damages</td>
-                <td>Visual</td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_damages_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Forward Deceleration 1</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_damages_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_damages_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_damages_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4224,20 +4224,20 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_Before_Forward_Deceleration1_damages_remarks" /></td>
-              </tr><tr>
-                <td></td>
-                <td></td>
-                <td>LED indicator</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_LED_result" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Forward_Deceleration1_damages_remarks" /></td>
+              </tr><tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_LED_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_LED_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_LED_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4248,21 +4248,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_Before_Forward_Deceleration1_LED_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Forward_Deceleration1_LED_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td>Backward Deceleration 1</td>
-                <td>Deformation or damages</td>
-                <td>Visual</td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Backward_DC1_damages_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Backward Deceleration 1</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Backward_DC1_damages_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Backward_DC1_damages_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Backward_DC1_damages_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4273,21 +4273,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_Before_Backward_DC1_damages_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Backward_DC1_damages_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>LED indicator</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Backward_DC1_LED_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Backward_DC1_LED_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Backward_DC1_LED_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Backward_DC1_LED_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4298,21 +4298,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_Before_Backward_DC1_LED_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Backward_DC1_LED_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td>Deceleration 2</td>
-                <td>Deformation or damages</td>
-                <td>Visual</td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Deceleration2_damages_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deceleration 2</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Deceleration2_damages_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Deceleration2_damages_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Deceleration2_damages_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4323,22 +4323,22 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_Before_Deceleration2_damages_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Deceleration2_damages_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td>Over-run detectors
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Over-run detectors
                   (Limit switch)</td>
-                <td>Deformation or damages</td>
-                <td>Visual</td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Over_run_detectors_damages_result" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Over_run_detectors_damages_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Over_run_detectors_damages_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Over_run_detectors_damages_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4349,21 +4349,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_Before_Over_run_detectors_damages_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Over_run_detectors_damages_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Spring condition</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Over_run_detectors_Spring_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Spring condition</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Over_run_detectors_Spring_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Over_run_detectors_Spring_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_Before_Over_run_detectors_Spring_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4374,21 +4374,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_Before_Over_run_detectors_Spring_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_Before_Over_run_detectors_Spring_remarks" /></td>
               </tr>
-              <tr>
-                <td>During</td>
-                <td>Home position detector</td>
-                <td>I/O check</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_During_Home_position_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Home position detector</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Home_position_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Home_position_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Home_position_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4399,21 +4399,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_During_Home_position_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_During_Home_position_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td>Regular position detector</td>
-                <td>I/O check</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_During_Regular_position_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Regular position detector</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Regular_position_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Regular_position_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Regular_position_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4424,21 +4424,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_During_Regular_position_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_During_Regular_position_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td>Forward Deceleration 1</td>
-                <td>I/O check</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_During_Forward_Deceleration1_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Forward Deceleration 1</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Forward_Deceleration1_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Forward_Deceleration1_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Forward_Deceleration1_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4449,21 +4449,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_During_Forward_Deceleration1_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_During_Forward_Deceleration1_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td>Backward Deceleration 1</td>
-                <td>I/O check</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_During_Backward_Deceleration1_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Backward Deceleration 1</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Backward_Deceleration1_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Backward_Deceleration1_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Backward_Deceleration1_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4474,21 +4474,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_During_Backward_Deceleration1_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_During_Backward_Deceleration1_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td>Deceleration 2</td>
-                <td>I/O check</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_During_Deceleration2_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deceleration 2</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Deceleration2_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Deceleration2_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Deceleration2_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4499,21 +4499,21 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_During_Deceleration2_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_During_Deceleration2_remarks" /></td>
               </tr>
-              <tr>
-                <td></td>
-                <td>Over-run detectors (2 directions)</td>
-                <td>I/O check</td>
-                <td>Touch</td>
-                <td><Field as="select" name="Traveling_Detectors_During_Over_run_detectors_result" >
+              <tr className="center-text text-[10px] sm:text-base">
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Over-run detectors (2 directions)</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Over_run_detectors_result" >
                   <option value="" disabled selected>Select option</option>
                   <option value="O">O</option>
                   <option value="∆">∆</option>
                   <option value="X">X</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Over_run_detectors_action" >
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Traveling_Detectors_During_Over_run_detectors_action" >
                   <option value="" disabled selected>Select option</option>
                   <option value="A">A</option>
                   <option value="C">C</option>
@@ -4524,35 +4524,35 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field type="text" name="Traveling_Detectors_During_Over_run_detectors_remarks" /></td>
+                <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Traveling_Detectors_During_Over_run_detectors_remarks" /></td>
               </tr>
             </tr>
           </table>
 
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Carriage Unit Detectors & I/O Checks</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Carriage positioning sensors (Up & down)</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_positioning_sensors_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Carriage positioning sensors (Up & down)</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_positioning_sensors_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_positioning_sensors_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_positioning_sensors_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4563,21 +4563,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_positioning_sensors_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_positioning_sensors_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_positioning_sensors_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_positioning_sensors_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_positioning_sensors_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_positioning_sensors_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4588,21 +4588,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_positioning_sensors_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_positioning_sensors_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Pre-occupied load sensors</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Pre_occupied_load_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Pre-occupied load sensors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Pre_occupied_load_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Pre_occupied_load_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Pre_occupied_load_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4613,21 +4613,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Pre_occupied_load_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Pre_occupied_load_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Pre_occupied_load_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Pre_occupied_load_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Pre_occupied_load_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Pre_occupied_load_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4638,21 +4638,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Pre_occupied_load_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Pre_occupied_load_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Load detect sensors</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_detect_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Load detect sensors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_detect_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_detect_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_detect_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4663,21 +4663,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Load_detect_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Load_detect_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_detect_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_detect_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_detect_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_detect_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4688,22 +4688,22 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Load_detect_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Load_detect_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Load profile detectors
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Load profile detectors
                 (Proximity type)</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_profile_damages_result" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_profile_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_profile_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_profile_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4714,21 +4714,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Load_profile_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Load_profile_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_profile_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_profile_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_profile_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_profile_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4739,21 +4739,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Load_profile_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Load_profile_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Load protrusion sensors</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_protrusion_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Load protrusion sensors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_protrusion_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_protrusion_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_protrusion_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4764,21 +4764,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Load_protrusion_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Load_protrusion_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_protrusion_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_protrusion_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_protrusion_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Load_protrusion_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4789,21 +4789,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Load_protrusion_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Load_protrusion_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Station upper level</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_upper_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Station upper level</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Station_upper_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_upper_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Station_upper_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4814,21 +4814,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Station_upper_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Station_upper_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_upper_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Station_upper_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_upper_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Station_upper_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4839,21 +4839,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Station_upper_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Station_upper_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Station lower level</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_lower_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Station lower level</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Station_lower_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_lower_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Station_lower_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4864,21 +4864,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Station_lower_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Station_lower_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_lower_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Station_lower_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_lower_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Station_lower_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4889,21 +4889,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Station_lower_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Station_lower_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Upward deceleration 1</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Upward_deceleration1_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Upward deceleration 1</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Upward_deceleration1_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Upward_deceleration1_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Upward_deceleration1_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4914,21 +4914,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Upward_deceleration1_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Upward_deceleration1_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Upward_deceleration1_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Upward_deceleration1_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Upward_deceleration1_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Upward_deceleration1_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4939,21 +4939,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Upward_deceleration1_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Upward_deceleration1_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Downward deceleration 1</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Downward_deceleration1_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Downward deceleration 1</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Downward_deceleration1_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Downward_deceleration1_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Downward_deceleration1_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4964,21 +4964,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Downward_deceleration1_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Downward_deceleration1_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Downward_deceleration1_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Downward_deceleration1_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Downward_deceleration1_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Downward_deceleration1_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -4989,21 +4989,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Downward_deceleration1_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Downward_deceleration1_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Deceleration 2</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Deceleration2_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deceleration 2</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Deceleration2_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Deceleration2_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Deceleration2_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5014,21 +5014,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Deceleration2_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Deceleration2_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Deceleration2_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Deceleration2_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Deceleration2_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Deceleration2_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5039,22 +5039,22 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Deceleration2_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Deceleration2_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Chain tension detectors
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Chain tension detectors
                 (Limit switch)</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Chain_tension_damages_result" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Chain_tension_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Chain_tension_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Chain_tension_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5065,21 +5065,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Chain_tension_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Chain_tension_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Spring condition</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Chain_tension_Spring_condition_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Spring condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Chain_tension_Spring_condition_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Chain_tension_Spring_condition_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Chain_tension_Spring_condition_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5090,22 +5090,22 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Chain_tension_Spring_condition_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Chain_tension_Spring_condition_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Overun detectors
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Overun detectors
                 (Limit switch)</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Over_run_detectors_damages_result" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Over_run_detectors_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Over_run_detectors_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Over_run_detectors_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5116,21 +5116,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Over_run_detectors_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Over_run_detectors_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Spring condition</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_Before_Over_run_detectors_Spring_condition_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Spring condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Over_run_detectors_Spring_condition_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Over_run_detectors_Spring_condition_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_Before_Over_run_detectors_Spring_condition_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5141,21 +5141,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_Before_Over_run_detectors_Spring_condition_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_Before_Over_run_detectors_Spring_condition_remarks" /></td>
             </tr>
-            <tr>
-              <td>During</td>
-              <td>Carriage positioning sensors</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Carriage_positioning_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Carriage positioning sensors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Carriage_positioning_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Carriage_positioning_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Carriage_positioning_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5166,21 +5166,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Carriage_positioning_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Carriage_positioning_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Pre-occupied load sensors</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Pre_occupied_load_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Pre-occupied load sensors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Pre_occupied_load_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Pre_occupied_load_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Pre_occupied_load_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5191,21 +5191,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Pre_occupied_load_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Pre_occupied_load_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Load detect sensors</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Load_detect_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Load detect sensors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Load_detect_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Load_detect_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Load_detect_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5216,21 +5216,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Load_detect_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Load_detect_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Load profile detectors</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Load_profile_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Load profile detectors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Load_profile_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Load_profile_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Load_profile_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5241,21 +5241,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Load_profile_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Load_profile_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Load protrusion sensors</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Load_protrusion_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Load protrusion sensors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Load_protrusion_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Load_protrusion_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Load_protrusion_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5266,21 +5266,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Load_protrusion_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Load_protrusion_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Station upper level</td>
-              <td>I/O check</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_During_Station_upper_level_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Station upper level</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Station_upper_level_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Station_upper_level_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Station_upper_level_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5291,21 +5291,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Station_upper_level_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Station_upper_level_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Station lower level</td>
-              <td>I/O check</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Carriage_Unit_During_Station_lower_level_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Station lower level</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Station_lower_level_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Station_lower_level_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Station_lower_level_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5316,21 +5316,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Station_lower_level_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Station_lower_level_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Upward deceleration 1</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Upward_deceleration1_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Upward deceleration 1</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Upward_deceleration1_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Upward_deceleration1_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Upward_deceleration1_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5341,21 +5341,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Upward_deceleration1_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Upward_deceleration1_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Downward deceleration 1</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Downward_deceleration1_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Downward deceleration 1</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Downward_deceleration1_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Downward_deceleration1_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Downward_deceleration1_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5366,21 +5366,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Downward_deceleration1_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Downward_deceleration1_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Deceleration 2</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Deceleration2_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deceleration 2</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Deceleration2_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Deceleration2_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Deceleration2_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5391,21 +5391,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Deceleration2_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Deceleration2_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Chain tension detectors</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Chain_tension_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Chain tension detectors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Chain_tension_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Chain_tension_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Chain_tension_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5416,22 +5416,22 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Chain_tension_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Chain_tension_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Over-run detectors
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Over-run detectors
                 (2 directions)</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Carriage_Unit_During_Over-run_detectors_result" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Over-run_detectors_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Over-run_detectors_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Carriage_Unit_During_Over-run_detectors_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5442,34 +5442,34 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Carriage_Unit_During_Over-run_detectors_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Carriage_Unit_During_Over-run_detectors_remarks" /></td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Fork Unit Detectors & I/O Checks</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Fork position detectors
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fork position detectors
                 (Limit switch/ proximity sensor)</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Fork_Unit_Before_Fork_position_damages_result" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Fork_Unit_Before_Fork_position_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Fork_Unit_Before_Fork_position_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Fork_Unit_Before_Fork_position_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5480,21 +5480,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Fork_Unit_Before_Fork_position_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Fork_Unit_Before_Fork_position_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Sensor condition</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Fork_Unit_Before_Fork_position_Sensor_condition_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sensor condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Fork_Unit_Before_Fork_position_Sensor_condition_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Fork_Unit_Before_Fork_position_Sensor_condition_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Fork_Unit_Before_Fork_position_Sensor_condition_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5505,21 +5505,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Fork_Unit_Before_Fork_position_Sensor_condition_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Fork_Unit_Before_Fork_position_Sensor_condition_remarks" /></td>
             </tr>
-            <tr>
-              <td>During</td>
-              <td>Fork end detectors</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Fork_Unit_During_Fork_end_detectors_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fork end detectors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Fork_Unit_During_Fork_end_detectors_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Fork_Unit_During_Fork_end_detectors_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Fork_Unit_During_Fork_end_detectors_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5530,21 +5530,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Fork_Unit_During_Fork_end_detectors_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Fork_Unit_During_Fork_end_detectors_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Fork center detectors</td>
-              <td>I/O check</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Fork_Unit_During_Fork_center_detectors_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fork center detectors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>I/O check</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Fork_Unit_During_Fork_center_detectors_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Fork_Unit_During_Fork_center_detectors_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Fork_Unit_During_Fork_center_detectors_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5555,34 +5555,34 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Fork_Unit_During_Fork_center_detectors_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Fork_Unit_During_Fork_center_detectors_remarks" /></td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Operation Panel and Controller</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Emergency-stop button
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Emergency-stop button
                 (Crane & controller)</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_e_stop_button_damages_result" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_e_stop_button_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_e_stop_button_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_e_stop_button_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5593,21 +5593,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_e_stop_button_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_e_stop_button_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Functionality</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_before_e_stop_button_Functionality_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Functionality</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_e_stop_button_Functionality_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_e_stop_button_Functionality_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_e_stop_button_Functionality_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5618,21 +5618,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_e_stop_button_Functionality_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_e_stop_button_Functionality_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Optical data transmitter</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Optical data transmitter</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Optical_data_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Optical_data_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5643,21 +5643,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Optical_data_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Optical_data_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_Dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Optical_data_Dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_Dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Optical_data_Dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5668,21 +5668,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Optical_data_Dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Optical_data_Dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Alignment</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_Alignment_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Alignment</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Optical_data_Alignment_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_Alignment_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Optical_data_Alignment_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5693,21 +5693,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Optical_data_Alignment_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Optical_data_Alignment_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Functionality</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_Functionality_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Functionality</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Optical_data_Functionality_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_Functionality_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Optical_data_Functionality_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5718,21 +5718,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Optical_data_Functionality_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Optical_data_Functionality_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>4 bit sensor</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>4 bit sensor</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_4bit_sensor_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_4bit_sensor_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5743,21 +5743,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_4bit_sensor_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_4bit_sensor_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_Dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_4bit_sensor_Dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_Dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_4bit_sensor_Dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5768,21 +5768,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_4bit_sensor_Dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_4bit_sensor_Dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Alignment</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_Alignment_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Alignment</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_4bit_sensor_Alignment_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_Alignment_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_4bit_sensor_Alignment_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5793,21 +5793,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_4bit_sensor_Alignment_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_4bit_sensor_Alignment_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Functionality</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_Functionality_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Functionality</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_4bit_sensor_Functionality_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_Functionality_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_4bit_sensor_Functionality_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5818,21 +5818,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_4bit_sensor_Functionality_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_4bit_sensor_Functionality_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Electro-magnetic contactors</td>
-              <td>On / Off condition</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_before_E-magnetic_On_Off_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Electro-magnetic contactors</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>On / Off condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_E-magnetic_On_Off_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_E-magnetic_On_Off_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_E-magnetic_On_Off_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5843,21 +5843,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_E-magnetic_On_Off_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_E-magnetic_On_Off_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Fastener condition</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_E_magnetic_Fastener_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Fastener condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_E_magnetic_Fastener_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_E_magnetic_Fastener_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_E_magnetic_Fastener_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5868,21 +5868,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_E_magnetic_Fastener_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_E_magnetic_Fastener_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Breaker</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Breaker_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Breaker</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Breaker_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Breaker_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Breaker_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5893,21 +5893,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Breaker_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Breaker_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Turn on and off properly</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_before_Breaker_Turn_on&off_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Turn on and off properly</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Breaker_Turn_on&off_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Breaker_Turn_on&off_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Breaker_Turn_on&off_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5918,21 +5918,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Breaker_Turn_on&off_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Breaker_Turn_on&off_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Electric wiring</td>
-              <td>Wiring condition</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Electric_wiring_condition_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Electric wiring</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Wiring condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Electric_wiring_condition_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Electric_wiring_condition_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Electric_wiring_condition_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5943,21 +5943,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Electric_wiring_condition_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Electric_wiring_condition_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Snapped/ broken wire</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_before_Electric_wiring_Snapped_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Snapped/ broken wire</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Electric_wiring_Snapped_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Electric_wiring_Snapped_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Electric_wiring_Snapped_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5968,21 +5968,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Electric_wiring_Snapped_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Electric_wiring_Snapped_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Power supply</td>
-              <td>Voltage measurement</td>
-              <td>Measure</td>
-              <td><Field as="select" name="Operation_Panel_before_Power_supply_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Power supply</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Voltage measurement</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Measure</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Power_supply_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Power_supply_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Power_supply_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -5993,21 +5993,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Power_supply_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Power_supply_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>P.C. Board</td>
-              <td>Connectors connection</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_before_PC_Board_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>P.C. Board</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Connectors connection</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_PC_Board_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_PC_Board_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_PC_Board_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6018,21 +6018,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_PC_Board_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_PC_Board_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Operation panel</td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Operation panel</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Operation_panel_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Operation_panel_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6043,21 +6043,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Operation_panel_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Operation_panel_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>LED indicator</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_LED_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>LED indicator</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Operation_panel_LED_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_LED_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Operation_panel_LED_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6068,21 +6068,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Operation_panel_LED_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Operation_panel_LED_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Key switch functionality</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_Key_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Key switch functionality</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Operation_panel_Key_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_Key_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Operation_panel_Key_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6093,21 +6093,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Operation_panel_Key_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Operation_panel_Key_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Operation/Control panel</td>
-              <td>Dust accumulation</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_before_Control_panel_dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Operation/Control panel</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Control_panel_dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Control_panel_dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Control_panel_dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6118,21 +6118,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Control_panel_dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Control_panel_dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Wiring condition</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Control_panel_Wiring_condition_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Wiring condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Control_panel_Wiring_condition_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Control_panel_Wiring_condition_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Control_panel_Wiring_condition_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6143,21 +6143,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Control_panel_Wiring_condition_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Control_panel_Wiring_condition_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Operation panel buttons</td>
-              <td>Functionality</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_buttons_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Operation panel buttons</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Functionality</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Operation_panel_buttons_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_buttons_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Operation_panel_buttons_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6168,21 +6168,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Operation_panel_buttons_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Operation_panel_buttons_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Indicators</td>
-              <td>Functionality</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_before_Indicators_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Indicators</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Functionality</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Indicators_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Indicators_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Indicators_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6193,21 +6193,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Indicators_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Indicators_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Ventilation fan</td>
-              <td>Functionality</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Operation_Panel_before_Ventilation_fan_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Ventilation fan</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Functionality</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Ventilation_fan_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Ventilation_fan_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_before_Ventilation_fan_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6218,21 +6218,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_before_Ventilation_fan_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_before_Ventilation_fan_remarks" /></td>
             </tr>
-            <tr>
-              <td>After</td>
-              <td>Bolts / screws</td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Operation_Panel_After_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_After_Bolts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_After_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Operation_Panel_After_Bolts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6243,33 +6243,33 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Operation_Panel_After_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Operation_Panel_After_Bolts_remarks" /></td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Inverter Unit</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Inverter</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_damages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Inverter</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_damages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_damages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_damages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6280,21 +6280,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Inverter_Unit_Before_Inverter_damages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Inverter_Unit_Before_Inverter_damages_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Dust accumulation</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Dust_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Dust accumulation</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_Dust_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Dust_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_Dust_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6305,21 +6305,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Inverter_Unit_Before_Inverter_Dust_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Inverter_Unit_Before_Inverter_Dust_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Wiring condition</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Wiring_condition_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Wiring condition</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_Wiring_condition_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Wiring_condition_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_Wiring_condition_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6330,21 +6330,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Inverter_Unit_Before_Inverter_Wiring_condition_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Inverter_Unit_Before_Inverter_Wiring_condition_remarks" /></td>
             </tr>
-            <tr>
-              <td>During</td>
-              <td></td>
-              <td>Abnormal sound</td>
-              <td>Sound</td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Wiring_sound_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>During</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Abnormal sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Sound</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_Wiring_sound_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Wiring_sound_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_Wiring_sound_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6355,21 +6355,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Inverter_Unit_Before_Inverter_Wiring_sound_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Inverter_Unit_Before_Inverter_Wiring_sound_remarks" /></td>
             </tr>
-            <tr>
-              <td>After</td>
-              <td></td>
-              <td>Bolts / screws looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Wiring_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_Wiring_Bolts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Wiring_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Inverter_Unit_Before_Inverter_Wiring_Bolts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6380,33 +6380,33 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Inverter_Unit_Before_Inverter_Wiring_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Inverter_Unit_Before_Inverter_Wiring_Bolts_remarks" /></td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Others</h2>
           <table>
-            <tr>
-              <th>Op</th>
-              <th>Inspection Item</th>
-              <th>Check Point</th>
-              <th>Method</th>
-              <th>Result</th>
-              <th>Action</th>
-              <th>Remarks</th>
+            <tr className="center-text text-[10px] sm:text-base">
+              <th className='text-[10px] sm:text-base'>Op</th>
+              <th className='text-[10px] sm:text-base'>Inspection Item</th>
+              <th className='text-[10px] sm:text-base'>Check Point</th>
+              <th className='text-[10px] sm:text-base'>Method</th>
+              <th className='text-[10px] sm:text-base'>Result</th>
+              <th className='text-[10px] sm:text-base'>Action</th>
+              <th className='text-[10px] sm:text-base'>Remarks</th>
             </tr>
-            <tr>
-              <td>Before</td>
-              <td>Mast</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Others_Before_Mast_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Before</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Mast</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Mast_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Mast_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Mast_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6417,21 +6417,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Others_Before_Mast_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Others_Before_Mast_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Support</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Others_Before_Support_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Support</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Support_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Support_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Support_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6442,21 +6442,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Others_Before_Support_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Others_Before_Support_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Cable</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Others_Before_Cable_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Cable</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Cable_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Cable_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Cable_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6467,21 +6467,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Others_Before_Cable_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Others_Before_Cable_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Cable protector</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Others_Before_Cable_protector_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Cable protector</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Cable_protector_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Cable_protector_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Cable_protector_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6492,21 +6492,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Others_Before_Cable_protector_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Others_Before_Cable_protector_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Cable guide</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Others_Before_Cable_guide_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Cable guide</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Cable_guide_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Cable_guide_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Cable_guide_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6517,21 +6517,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Others_Before_Cable_guide_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Others_Before_Cable_guide_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Safety plug</td>
-              <td>Functionality</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Others_Before_Safety_plug_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Safety plug</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Functionality</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Safety_plug_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Safety_plug_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Safety_plug_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6542,21 +6542,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Others_Before_Safety_plug_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Others_Before_Safety_plug_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td>Safety fence</td>
-              <td>Deformation or damages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Others_Before_Safety_fence_damage_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Safety fence</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Deformation or damages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Safety_fence_damage_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Safety_fence_damage_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Safety_fence_damage_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6567,21 +6567,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Others_Before_Safety_fence_damage_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Others_Before_Safety_fence_damage_remarks" /></td>
             </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td>Signages</td>
-              <td>Visual</td>
-              <td><Field as="select" name="Others_Before_Safety_fence_Signages_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Signages</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Visual</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Safety_fence_Signages_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Safety_fence_Signages_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_Before_Safety_fence_Signages_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6592,21 +6592,21 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Others_Before_Safety_fence_Signages_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Others_Before_Safety_fence_Signages_remarks" /></td>
             </tr>
-            <tr>
-              <td>After</td>
-              <td>Bolts / screws</td>
-              <td>Looseness</td>
-              <td>Touch</td>
-              <td><Field as="select" name="Others_After_Bolts_result" >
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>After</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Bolts / screws</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Looseness</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>Touch</td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_After_Bolts_result" >
                 <option value="" disabled selected>Select option</option>
                 <option value="O">O</option>
                 <option value="∆">∆</option>
                 <option value="X">X</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_After_Bolts_action" >
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" as="select" name="Others_After_Bolts_action" >
                 <option value="" disabled selected>Select option</option>
                 <option value="A">A</option>
                 <option value="C">C</option>
@@ -6617,14 +6617,14 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field type="text" name="Others_After_Bolts_remarks" /></td>
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" name="Others_After_Bolts_remarks" /></td>
             </tr>
-            <tr>
-              <td><b>Result</b> O=Good ∆=Fair X=Defective</td>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><b>Result</b> O=Good ∆=Fair X=Defective</td>
 
             </tr>
-            <tr>
-              <td><b>Action</b> A=Adjust C=Clean R=Replace M=Make repair T=Tighten O=Overhaul L=Lubricate</td>
+            <tr className="center-text text-[10px] sm:text-base">
+              <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'><b>Action</b> A=Adjust C=Clean R=Replace M=Make repair T=Tighten O=Overhaul L=Lubricate</td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">CHAIN ELONGATION MEASUREMENT:</h2>
@@ -6635,10 +6635,10 @@ items-center text-center`}
             <Field as="textarea" className='border-black border w-[100%]' id="crane14_REPORT_SUMMARY" name="crane14_REPORT_SUMMARY"></Field>
           </div>
 
-          <td>
+          <td className='text-[10px] sm:text-base pb-2 w-1/4 sm:w-auto'>
             <div class="textbox-container">
               <label for="crane14_Verified_by_MNC">Verified by (MNC):</label>
-              <Field type="text" id="crane14_Verified_by_MNC" name="crane14_Verified_by_MNC" />
+              <Field className="w-[80px] sm:w-full h-[35px] text-center" type="text" id="crane14_Verified_by_MNC" name="crane14_Verified_by_MNC" />
             </div>
           </td>
         </Form>
