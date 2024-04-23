@@ -860,7 +860,7 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_Travel_motor_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_Before_Travel_motor_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -883,7 +883,7 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_Speed_reducer_damages_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_Before_Speed_reducer_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -906,7 +906,7 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_Speed_reducer_leakage_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_Before_Speed_reducer_leakage_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -929,7 +929,7 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_Speed_reducer_level_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_Before_Speed_reducer_level_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -952,7 +952,7 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_E-magnetic_brake_wear&tear_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_Before_E-magnetic_brake_wear&tear_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -975,7 +975,7 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field as="select" name="Travel_Drive_Before_E-magnetic_brake_Brake_gap_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_Before_E-magnetic_brake_Brake_gap_remarks" /></td>
             </tr>
 
             <tr>
@@ -1001,7 +1001,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_Before_Drive_wheel_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_Before_Drive_wheel_remarks" /></td>
             </tr>
 
             <tr>
@@ -1027,7 +1027,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_Before_Free_wheel_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_Before_Free_wheel_remarks" /></td>
             </tr>
 
             <tr>
@@ -1053,7 +1053,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_Before_Travel_encoder_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_Before_Travel_encoder_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -1078,7 +1078,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_Travel_motor_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_During_Travel_motor_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1103,7 +1103,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_Speed_reducer_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_During_Speed_reducer_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1128,7 +1128,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_E_magnetic_brake_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_During_E_magnetic_brake_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1153,7 +1153,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_Travel_wheel_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_During_Travel_wheel_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1178,7 +1178,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_During_Free_wheel_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_During_Free_wheel_remarks" /></td>
             </tr>
             <tr>
               <td>After</td>
@@ -1203,7 +1203,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_After_Travel_motor_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_After_Travel_motor_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1228,7 +1228,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_After_Speed_reducer_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_After_Speed_reducer_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1253,7 +1253,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Travel_Drive_After_Bolts_remarks" /></td>
+              <td><Field type="text" name="Travel_Drive_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
@@ -1291,7 +1291,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_motor_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_motor_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1316,7 +1316,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Speed_reducer_damages_action" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_Speed_reducer_damages_action" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1341,7 +1341,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Speed_reducer_leakage_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_Speed_reducer_leakage_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1366,7 +1366,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Speed_reducer_level_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_Speed_reducer_level_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1391,7 +1391,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_E_magnetic_brake_wear_tear_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_E_magnetic_brake_wear_tear_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1416,7 +1416,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_E_magnetic_brake_Brake_gap_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_E_magnetic_brake_Brake_gap_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1442,7 +1442,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_chain_Abrasion_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_chain_Abrasion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1467,7 +1467,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_chain_Chain_tension_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_chain_Chain_tension_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1492,7 +1492,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_chain_Elongation_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_chain_Elongation_remarks" /></td>
             </tr>
 
             <tr>
@@ -1518,7 +1518,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Sprocket_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_Sprocket_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1543,7 +1543,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_Before_Hoisting_encoder_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_Before_Hoisting_encoder_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -1568,7 +1568,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_During_Hoisting_motor_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_During_Hoisting_motor_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1593,7 +1593,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_During_Speed_reducer_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_During_Speed_reducer_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1618,7 +1618,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_During_E_magneticmagnetic_brake_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_During_E_magneticmagnetic_brake_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1643,7 +1643,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_During_Sprocket_sound_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_During_Sprocket_sound_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1668,7 +1668,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_During_Sprocket_vibrations_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_During_Sprocket_vibrations_remarks" /></td>
             </tr>
 
             <tr>
@@ -1694,7 +1694,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_After_Hoisting_motor_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_After_Hoisting_motor_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1719,7 +1719,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_After_Speed_reducer_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_After_Speed_reducer_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1744,7 +1744,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoist_Drive_After_Bolts_remarks" /></td>
+              <td><Field type="text" name="Hoist_Drive_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
@@ -1782,7 +1782,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Carriage_frame_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_Carriage_frame_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1807,7 +1807,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_guide_rollers_abrasion_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_guide_rollers_abrasion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1832,7 +1832,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_guide_rollers_mast_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_guide_rollers_mast_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1857,7 +1857,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_guide_rollers_Diameter_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_guide_rollers_Diameter_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1882,7 +1882,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_face_rollers_abrasion_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_face_rollers_abrasion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1907,7 +1907,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_face_rollers_Diameter_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_face_rollers_Diameter_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1932,7 +1932,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Load_profile_damages_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_Load_profile_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1957,7 +1957,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Load_profile_Spring_condition_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_Load_profile_Spring_condition_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -1982,7 +1982,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Bay_count_shielding_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_Bay_count_shielding_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2007,7 +2007,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Home_position_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_Home_position_remarks" /></td>
             </tr>
             <tr>
               <td>Bef.</td>
@@ -2032,7 +2032,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Deceleration_shielding_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_Deceleration_shielding_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2057,7 +2057,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Over_run_flag_damages_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_Over_run_flag_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2082,7 +2082,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_Before_Over_run_flag_Position_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_Before_Over_run_flag_Position_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -2107,7 +2107,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_During_guide_rollers_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_During_guide_rollers_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2132,7 +2132,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_During_face_rollers_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_During_face_rollers_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2157,7 +2157,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_During_Shielding_plates_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_During_Shielding_plates_remarks" /></td>
             </tr>
             <tr>
               <td>After</td>
@@ -2182,7 +2182,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Hoisting_Carriage_After_Bolts_remarks" /></td>
+              <td><Field type="text" name="Hoisting_Carriage_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
@@ -2220,7 +2220,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Top_rail_damages_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Top_rail_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2245,7 +2245,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Top_rail_Rail_joint_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Top_rail_Rail_joint_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2270,7 +2270,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Top_rail_Bolts_and_nuts_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Top_rail_Bolts_and_nuts_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2295,7 +2295,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bottom_rail_damages_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Bottom_rail_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2320,7 +2320,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bottom_rail_Rail_joint_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Bottom_rail_Rail_joint_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2345,7 +2345,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Shim_plates_damages_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Shim_plates_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2370,7 +2370,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Shim_plates_Missing_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Shim_plates_Missing_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2395,7 +2395,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Anchor_bolt_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Anchor_bolt_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2420,7 +2420,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Shielding_plates_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Shielding_plates_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2445,7 +2445,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Bay_count_shielding_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Bay_count_shielding_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2474,7 +2474,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Home_position_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Home_position_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2499,7 +2499,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Deceleration_shielding_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Deceleration_shielding_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2524,7 +2524,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Over_run_flag_damages_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Over_run_flag_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2549,7 +2549,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_Before_Over_run_flag_Position_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_Before_Over_run_flag_Position_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -2574,7 +2574,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_During_Top_rail_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_During_Top_rail_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2599,7 +2599,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_During_Bottom_rail_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_During_Bottom_rail_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2624,7 +2624,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_During_Shielding_plates_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_During_Shielding_plates_remarks" /></td>
             </tr>
             <tr>
               <td>After</td>
@@ -2649,7 +2649,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Top_Bottom_Rails_After_Bolts_remarks" /></td>
+              <td><Field type="text" name="Top_Bottom_Rails_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
@@ -2687,7 +2687,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Upper_frame_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_Before_Upper_frame_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2712,7 +2712,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Sprocket_Abrasion_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_Before_Sprocket_Abrasion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2737,7 +2737,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Upper_travel_guide_Abrasion_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_Before_Upper_travel_guide_Abrasion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2762,7 +2762,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Upper_travel_guide_Diameter_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_Before_Upper_travel_guide_Diameter_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2787,7 +2787,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Lower_frame_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_Before_Lower_frame_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2812,7 +2812,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Sprocket_deformation_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_Before_Sprocket_deformation_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2837,7 +2837,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Abrasion_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_Before_Lower_travel_guide_Abrasion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2861,7 +2861,7 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field as="select" name="Upper_Lower_Frames_Before_Lower_travel_guide_Diameter_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_Before_Lower_travel_guide_Diameter_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -2887,7 +2887,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Upper_travel_guide_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_During_Upper_travel_guide_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2912,7 +2912,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Lower_travel_guide_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_During_Lower_travel_guide_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2937,7 +2937,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Sprocket_sound_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_During_Sprocket_sound_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -2962,7 +2962,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_During_Sprocket_vibrations_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_During_Sprocket_vibrations_remarks" /></td>
             </tr>
             <tr>
               <td>After</td>
@@ -2987,7 +2987,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Upper_Lower_Frames_After_Bolts_remarks" /></td>
+              <td><Field type="text" name="Upper_Lower_Frames_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
@@ -3025,7 +3025,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Fork_Before_body_frame_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Fork_Before_body_frame_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3050,7 +3050,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Fork_motor_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Fork_motor_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3075,7 +3075,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Deformation_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Speed_reducer_Deformation_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3100,7 +3100,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Speed_reducer_Grease_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Speed_reducer_Grease_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3125,7 +3125,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_wear_tear_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_E_magnetic_brake_wear_tear_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3149,7 +3149,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_E_magnetic_brake_Brake_gap_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_E_magnetic_brake_Brake_gap_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3174,7 +3174,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Abrasion_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Rack_and_pinion_Abrasion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3198,7 +3198,7 @@ items-center text-center`}
                 <option value="O">O</option>
                 <option value="L">L</option>
               </Field></td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Rack_and_pinion_Lubrication_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Rack_and_pinion_Lubrication_remarks" /></td>
             </tr>
             <tr>
               <td>Before</td>
@@ -3223,7 +3223,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Middle_rail_Abrasion_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Middle_rail_Abrasion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3248,7 +3248,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Middle_rail_Groove_condition_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Middle_rail_Groove_condition_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3273,7 +3273,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Middle_rail_Lubrication_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Middle_rail_Lubrication_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3298,7 +3298,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Cam_followers_Abrasion_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Cam_followers_Abrasion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3323,7 +3323,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Cam_followers_Lubrication_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Cam_followers_Lubrication_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3348,7 +3348,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Cam_followers_Smooth_rotation_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Cam_followers_Smooth_rotation_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3373,7 +3373,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Lock_nut_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Torque_limiter_Lock_nut_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3398,7 +3398,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Torque_limiter_Mechanical_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Torque_limiter_Mechanical_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3423,7 +3423,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Sprocket_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Sprocket_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3448,7 +3448,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Deformation_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Sensing_plates_Deformation_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3473,7 +3473,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_Before_Sensing_plates_Looseness_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_Before_Sensing_plates_Looseness_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -3498,7 +3498,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Fork_motor_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_During_Fork_motor_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3523,7 +3523,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Speed_reducer_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_During_Speed_reducer_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3548,7 +3548,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_E_magnetic_brake_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_During_E_magnetic_brake_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3573,7 +3573,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Fork_plate_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_During_Fork_plate_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3598,7 +3598,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_sound_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_During_Rack_and_pinion_sound_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3623,7 +3623,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Rack_and_pinion_vibrations_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_During_Rack_and_pinion_vibrations_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3648,7 +3648,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Sprocket_sound_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_During_Sprocket_sound_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3673,7 +3673,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_During_Sprocket_vibrations_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_During_Sprocket_vibrations_remarks" /></td>
             </tr>
             <tr>
               <td>After</td>
@@ -3698,7 +3698,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_Fork_motor_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_After_Fork_motor_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3723,7 +3723,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_Speed_reducer_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_After_Speed_reducer_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3748,7 +3748,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_E_magnetic_brake_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_After_E_magnetic_brake_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3773,7 +3773,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Slide_Fork_Unit_After_Bolts_remarks" /></td>
+              <td><Field type="text" name="Slide_Fork_Unit_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
@@ -3811,7 +3811,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_power_feed_rail_damages_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_Before_power_feed_rail_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3836,7 +3836,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_power_feed_rail_Fastener_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_Before_power_feed_rail_Fastener_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3861,7 +3861,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_power_feed_rail_Dust_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_Before_power_feed_rail_Dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3886,7 +3886,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_arm_damages_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_arm_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3911,7 +3911,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_arm_Spring_condition_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_arm_Spring_condition_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3936,7 +3936,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_shoes_damages_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_shoes_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3961,7 +3961,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_shoes_Fastener_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_shoes_Fastener_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -3986,7 +3986,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_Before_Collector_shoes_Dust_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_Before_Collector_shoes_Dust_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -4011,7 +4011,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_During_Joiner_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_During_Joiner_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4036,7 +4036,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_During_Feed_in_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_During_Feed_in_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4061,7 +4061,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_During_Current_collector_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_During_Current_collector_remarks" /></td>
             </tr>
             <tr>
               <td>After</td>
@@ -4086,7 +4086,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Power_Feed_Unit_After_Bolts_remarks" /></td>
+              <td><Field type="text" name="Power_Feed_Unit_After_Bolts_remarks" /></td>
             </tr>
           </table>
 
@@ -4124,7 +4124,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Traveling_Detectors_Before_Home_position_damages_remarks" /></td>
+              <td><Field type="text" name="Traveling_Detectors_Before_Home_position_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4149,7 +4149,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Traveling_Detectors_Before_Home_position_LED_remarks" /></td>
+              <td><Field type="text" name="Traveling_Detectors_Before_Home_position_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4175,7 +4175,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Traveling_Detectors_Before_Regular_position_damages_remarks" /></td>
+              <td><Field type="text" name="Traveling_Detectors_Before_Regular_position_damages_remarks" /></td>
               <tr>
                 <td></td>
                 <td></td>
@@ -4199,7 +4199,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Regular_position_LED_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_Before_Regular_position_LED_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4224,7 +4224,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_damages_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_Before_Forward_Deceleration1_damages_remarks" /></td>
               </tr><tr>
                 <td></td>
                 <td></td>
@@ -4248,7 +4248,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Forward_Deceleration1_LED_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_Before_Forward_Deceleration1_LED_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4273,7 +4273,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Backward_DC1_damages_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_Before_Backward_DC1_damages_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4298,7 +4298,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Backward_DC1_LED_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_Before_Backward_DC1_LED_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4323,7 +4323,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Deceleration2_damages_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_Before_Deceleration2_damages_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4349,7 +4349,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Over_run_detectors_damages_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_Before_Over_run_detectors_damages_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4374,7 +4374,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_Before_Over_run_detectors_Spring_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_Before_Over_run_detectors_Spring_remarks" /></td>
               </tr>
               <tr>
                 <td>During</td>
@@ -4399,7 +4399,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Home_position_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_During_Home_position_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4424,7 +4424,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Regular_position_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_During_Regular_position_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4449,7 +4449,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Forward_Deceleration1_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_During_Forward_Deceleration1_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4474,7 +4474,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Backward_Deceleration1_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_During_Backward_Deceleration1_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4499,7 +4499,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Deceleration2_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_During_Deceleration2_remarks" /></td>
               </tr>
               <tr>
                 <td></td>
@@ -4524,7 +4524,7 @@ items-center text-center`}
                   <option value="L">L</option>
                 </Field>
                 </td>
-                <td><Field as="select" name="Traveling_Detectors_During_Over_run_detectors_remarks" /></td>
+                <td><Field type="text" name="Traveling_Detectors_During_Over_run_detectors_remarks" /></td>
               </tr>
             </tr>
           </table>
@@ -4563,7 +4563,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_positioning_sensors_dust_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_positioning_sensors_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4588,7 +4588,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_positioning_sensors_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_positioning_sensors_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4613,7 +4613,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Pre_occupied_load_dust_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Pre_occupied_load_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4638,7 +4638,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Pre_occupied_load_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Pre_occupied_load_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4663,7 +4663,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_detect_dust_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Load_detect_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4688,7 +4688,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_detect_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Load_detect_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4714,7 +4714,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_profile_damages_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Load_profile_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4739,7 +4739,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_profile_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Load_profile_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4764,7 +4764,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_protrusion_dust_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Load_protrusion_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4789,7 +4789,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Load_protrusion_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Load_protrusion_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4814,7 +4814,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_upper_dust_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Station_upper_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4839,7 +4839,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_upper_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Station_upper_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4864,7 +4864,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_lower_dust_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Station_lower_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4889,7 +4889,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Station_lower_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Station_lower_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4914,7 +4914,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Upward_deceleration1_dust_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Upward_deceleration1_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4939,7 +4939,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Upward_deceleration1_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Upward_deceleration1_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4964,7 +4964,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Downward_deceleration1_dust_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Downward_deceleration1_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -4989,7 +4989,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Downward_deceleration1_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Downward_deceleration1_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5014,7 +5014,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Deceleration2_dust_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Deceleration2_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5039,7 +5039,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Deceleration2_LED_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Deceleration2_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5065,7 +5065,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Chain_tension_damages_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Chain_tension_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5090,7 +5090,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Chain_tension_Spring_condition_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Chain_tension_Spring_condition_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5116,7 +5116,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Over_run_detectors_damages_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Over_run_detectors_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5141,7 +5141,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_Before_Over_run_detectors_Spring_condition_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_Before_Over_run_detectors_Spring_condition_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -5166,7 +5166,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Carriage_positioning_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Carriage_positioning_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5191,7 +5191,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Pre_occupied_load_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Pre_occupied_load_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5216,7 +5216,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Load_detect_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Load_detect_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5241,7 +5241,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Load_profile_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Load_profile_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5266,7 +5266,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Load_protrusion_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Load_protrusion_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5291,7 +5291,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Station_upper_level_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Station_upper_level_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5316,7 +5316,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Station_lower_level_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Station_lower_level_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5341,7 +5341,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Upward_deceleration1_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Upward_deceleration1_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5366,7 +5366,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Downward_deceleration1_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Downward_deceleration1_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5391,7 +5391,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Deceleration2_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Deceleration2_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5416,7 +5416,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Chain_tension_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Chain_tension_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5442,7 +5442,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Carriage_Unit_During_Over-run_detectors_remarks" /></td>
+              <td><Field type="text" name="Carriage_Unit_During_Over-run_detectors_remarks" /></td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Fork Unit Detectors & I/O Checks</h2>
@@ -5480,7 +5480,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Fork_Unit_Before_Fork_position_damages_remarks" /></td>
+              <td><Field type="text" name="Fork_Unit_Before_Fork_position_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5505,7 +5505,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Fork_Unit_Before_Fork_position_Sensor_condition_remarks" /></td>
+              <td><Field type="text" name="Fork_Unit_Before_Fork_position_Sensor_condition_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -5530,7 +5530,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Fork_Unit_During_Fork_end_detectors_remarks" /></td>
+              <td><Field type="text" name="Fork_Unit_During_Fork_end_detectors_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5555,7 +5555,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Fork_Unit_During_Fork_center_detectors_remarks" /></td>
+              <td><Field type="text" name="Fork_Unit_During_Fork_center_detectors_remarks" /></td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Operation Panel and Controller</h2>
@@ -5593,7 +5593,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_e_stop_button_damages_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_e_stop_button_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5618,7 +5618,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_e_stop_button_Functionality_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_e_stop_button_Functionality_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5643,7 +5643,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_damages_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Optical_data_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5668,7 +5668,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_Dust_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Optical_data_Dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5693,7 +5693,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_Alignment_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Optical_data_Alignment_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5718,7 +5718,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Optical_data_Functionality_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Optical_data_Functionality_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5743,7 +5743,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_damages_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_4bit_sensor_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5768,7 +5768,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_Dust_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_4bit_sensor_Dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5793,7 +5793,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_Alignment_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_4bit_sensor_Alignment_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5818,7 +5818,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_4bit_sensor_Functionality_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_4bit_sensor_Functionality_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5843,7 +5843,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_E-magnetic_On_Off_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_E-magnetic_On_Off_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5868,7 +5868,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_E_magnetic_Fastener_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_E_magnetic_Fastener_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5893,7 +5893,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Breaker_damages_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Breaker_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5918,7 +5918,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Breaker_Turn_on&off_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Breaker_Turn_on&off_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5943,7 +5943,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Electric_wiring_condition_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Electric_wiring_condition_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5968,7 +5968,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Electric_wiring_Snapped_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Electric_wiring_Snapped_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -5993,7 +5993,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Power_supply_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Power_supply_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6018,7 +6018,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_PC_Board_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_PC_Board_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6043,7 +6043,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_dust_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Operation_panel_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6068,7 +6068,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_LED_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Operation_panel_LED_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6093,7 +6093,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_Key_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Operation_panel_Key_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6118,7 +6118,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Control_panel_dust_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Control_panel_dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6143,7 +6143,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Control_panel_Wiring_condition_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Control_panel_Wiring_condition_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6168,7 +6168,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Operation_panel_buttons_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Operation_panel_buttons_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6193,7 +6193,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Indicators_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Indicators_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6218,7 +6218,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_before_Ventilation_fan_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_before_Ventilation_fan_remarks" /></td>
             </tr>
             <tr>
               <td>After</td>
@@ -6243,7 +6243,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Operation_Panel_After_Bolts_remarks" /></td>
+              <td><Field type="text" name="Operation_Panel_After_Bolts_remarks" /></td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Inverter Unit</h2>
@@ -6280,7 +6280,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_damages_remarks" /></td>
+              <td><Field type="text" name="Inverter_Unit_Before_Inverter_damages_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6305,7 +6305,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Dust_remarks" /></td>
+              <td><Field type="text" name="Inverter_Unit_Before_Inverter_Dust_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6330,7 +6330,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Wiring_condition_remarks" /></td>
+              <td><Field type="text" name="Inverter_Unit_Before_Inverter_Wiring_condition_remarks" /></td>
             </tr>
             <tr>
               <td>During</td>
@@ -6355,7 +6355,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Wiring_sound_remarks" /></td>
+              <td><Field type="text" name="Inverter_Unit_Before_Inverter_Wiring_sound_remarks" /></td>
             </tr>
             <tr>
               <td>After</td>
@@ -6380,7 +6380,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Inverter_Unit_Before_Inverter_Wiring_Bolts_remarks" /></td>
+              <td><Field type="text" name="Inverter_Unit_Before_Inverter_Wiring_Bolts_remarks" /></td>
             </tr>
           </table>
           <h2 className="text-2xl font-extrabold dark:text-gray-200 mb-2">Others</h2>
@@ -6417,7 +6417,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Mast_remarks" /></td>
+              <td><Field type="text" name="Others_Before_Mast_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6442,7 +6442,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Support_remarks" /></td>
+              <td><Field type="text" name="Others_Before_Support_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6467,7 +6467,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Cable_remarks" /></td>
+              <td><Field type="text" name="Others_Before_Cable_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6492,7 +6492,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Cable_protector_remarks" /></td>
+              <td><Field type="text" name="Others_Before_Cable_protector_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6517,7 +6517,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Cable_guide_remarks" /></td>
+              <td><Field type="text" name="Others_Before_Cable_guide_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6542,7 +6542,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Safety_plug_remarks" /></td>
+              <td><Field type="text" name="Others_Before_Safety_plug_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6567,7 +6567,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Safety_fence_damage_remarks" /></td>
+              <td><Field type="text" name="Others_Before_Safety_fence_damage_remarks" /></td>
             </tr>
             <tr>
               <td></td>
@@ -6592,7 +6592,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_Before_Safety_fence_Signages_remarks" /></td>
+              <td><Field type="text" name="Others_Before_Safety_fence_Signages_remarks" /></td>
             </tr>
             <tr>
               <td>After</td>
@@ -6617,7 +6617,7 @@ items-center text-center`}
                 <option value="L">L</option>
               </Field>
               </td>
-              <td><Field as="select" name="Others_After_Bolts_remarks" /></td>
+              <td><Field type="text" name="Others_After_Bolts_remarks" /></td>
             </tr>
             <tr>
               <td><b>Result</b> O=Good ∆=Fair X=Defective</td>
